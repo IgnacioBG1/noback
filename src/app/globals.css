@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
+/* Paleta de NoBack (provisional hasta la marca definitiva). */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #17201b;
+  --ink-soft: #55615a;
+  --line: #e4e2dc;
+  --brand: #1f5f4a;
+  --brand-ink: #ffffff;
+  --brand-soft: #e6efe9;
+  --danger: #a3332b;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #0f1412;
+    --surface: #161d1a;
+    --ink: #e9eeeb;
+    --ink-soft: #a3b0a9;
+    --line: #2a3430;
+    --brand: #6fc3a2;
+    --brand-ink: #0c1411;
+    --brand-soft: #1b2b25;
+    --danger: #f08a80;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-danger: var(--danger);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
 }
