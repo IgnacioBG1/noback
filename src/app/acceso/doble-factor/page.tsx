@@ -5,6 +5,7 @@ import { getSessionInfo } from "@/lib/supabase/server";
 import { decideAccess } from "@/lib/access";
 import { MfaForm } from "./mfa-form";
 
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Doble factor" };
 
 export default async function DobleFactorPage() {

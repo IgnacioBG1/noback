@@ -6,6 +6,7 @@ import { createServerClient } from "@supabase/ssr";
  * Las reglas de rol y doble factor se comprueban en los layouts del servidor y, sobre todo, en la base de datos (RLS).
  */
 const PRIVATE = ["/clinica", "/paciente", "/acceso/doble-factor"];
+// /api/stripe/webhook y /auth/confirmar son públicos: los protege la firma de Stripe y el token del enlace.
 
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });

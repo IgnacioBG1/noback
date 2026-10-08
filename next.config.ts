@@ -14,7 +14,7 @@ const csp = [
   "frame-src 'none'", // se abrirá a Whereby en el bloque 3
   "frame-ancestors 'none'",
   "base-uri 'self'",
-  "form-action 'self'",
+  "form-action 'self' https://checkout.stripe.com", // el pago redirige a Stripe
   "object-src 'none'",
   "upgrade-insecure-requests",
 ].join("; ");

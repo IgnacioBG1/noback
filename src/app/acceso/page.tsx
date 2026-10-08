@@ -6,6 +6,7 @@ import { getSessionInfo } from "@/lib/supabase/server";
 import { isStaffRole, safeNext } from "@/lib/access";
 import { LoginForm } from "./login-form";
 
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Acceso" };
 
 export default async function AccesoPage({ searchParams }: PageProps<"/acceso">) {
