@@ -47,6 +47,7 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
   const h = (rec ?? { encounters: [], measurements: [], plans: [] }) as Historia;
   const medidas = h.measurements.map((m) => normalizaMedicion(m as unknown as Record<string, unknown>));
   const plan = h.plans[0] ?? null;
+  const ultima = medidas.length ? medidas[medidas.length - 1] : null;
   const consentKind = plan ? TREATMENT_CONSENT_FOR_ROUTE[plan.route] : null;
   const consent = consentKind ? (consents ?? []).find((c) => c.kind === consentKind) : undefined;
   const firmado = !!consent?.granted;
@@ -93,15 +94,23 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
         </p>
       )}
 
-      {intake && (
+      {ultima ? (
+        <section className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5" aria-label="Última medición">
+          <StatCard label="Peso" value={ultima.peso_kg != null ? fmtNum(ultima.peso_kg) : "—"} unit="kg" hint={`medido ${fmtFecha(ultima.measured_at, { day: "numeric", month: "short" })}`} />
+          <StatCard label="IMC" value={ultima.peso_kg != null && altura > 0 ? fmtNum(imc(ultima.peso_kg, altura)) : "—"} hint={altura > 0 ? `altura ${altura} cm` : undefined} />
+          <StatCard label="Grasa corporal" value={ultima.grasa_pct != null ? fmtNum(ultima.grasa_pct) : "—"} unit="%" />
+          <StatCard label="Masa magra" value={ultima.masa_magra_kg != null ? fmtNum(ultima.masa_magra_kg) : "—"} unit="kg" />
+          <StatCard label="Cintura / altura" value={ultima.cintura_cm != null && altura > 0 ? fmtNum(ultima.cintura_cm / altura, 2) : "—"} />
+        </section>
+      ) : intake ? (
         <section className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5" aria-label="Datos de partida declarados">
-          <StatCard label="Peso" value={peso > 0 ? fmtNum(peso) : "—"} unit="kg" />
+          <StatCard label="Peso" value={peso > 0 ? fmtNum(peso) : "—"} unit="kg" hint="declarado" />
           <StatCard label="Altura" value={altura > 0 ? altura : "—"} unit="cm" />
           <StatCard label="IMC" value={peso > 0 && altura > 0 ? fmtNum(imc(peso, altura)) : "—"} />
           <StatCard label="Cintura" value={cintura > 0 ? fmtNum(cintura, 0) : "—"} unit={cintura > 0 ? "cm" : undefined} />
           <StatCard label="Cintura / altura" value={cintura > 0 && altura > 0 ? fmtNum(cintura / altura, 2) : "—"} />
         </section>
-      )}
+      ) : null}
 
       <div className="grid gap-4 lg:grid-cols-3">
         <div className="space-y-4 lg:col-span-2">
@@ -171,7 +180,7 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
                 { label: "Cuestionario de acogida", detail: enviado ? fmtFecha(intake?.submitted_at) : intake ? "En borrador" : undefined, state: enviado ? "done" : "current" },
                 { label: "Valoración pagada", state: p.phase ? "done" : enviado ? "current" : "todo" },
                 { label: "Analítica y medición inicial", state: medidas.length ? "done" : p.phase ? "current" : "todo" },
-                { label: "Consulta médica", detail: h.encounters[0] ? fmtFecha(h.encounters[0].occurred_at) : undefined, state: h.encounters.length ? "done" : p.phase && medidas.length ? "current" : "todo" },
+                { label: "Consulta médica", detail: h.encounters.length ? fmtFecha(h.encounters[h.encounters.length - 1].occurred_at) : undefined, state: h.encounters.length ? "done" : p.phase && medidas.length ? "current" : "todo" },
                 { label: "Ruta y plan asignados", state: plan ? "done" : h.encounters.length ? "current" : "todo" },
                 { label: "Consentimiento del tratamiento", detail: firmado ? fmtFecha(consent?.created_at) : plan ? "Pendiente de firma en la app" : undefined, state: firmado ? "done" : plan ? "current" : "todo" },
               ]}
