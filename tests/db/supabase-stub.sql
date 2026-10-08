@@ -26,4 +26,8 @@ $$;
 grant usage on schema auth to anon, authenticated, service_role;
 grant execute on all functions in schema auth to anon, authenticated, service_role;
 grant usage on schema public to anon, authenticated, service_role;
--- Como en un proyecto creado sin «exponer automáticamente las tablas nuevas»: sin privilegios por defecto.
+-- Como en Supabase real: las tablas nuevas de public conceden TODO a anon, authenticated y service_role
+-- (incluido TRUNCATE). Las migraciones deben cerrar estos privilegios; los tests lo comprueban.
+alter default privileges in schema public grant all on tables to anon, authenticated, service_role;
+alter default privileges in schema public grant all on sequences to anon, authenticated, service_role;
+alter default privileges in schema public grant execute on functions to anon, authenticated, service_role;

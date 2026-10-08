@@ -146,6 +146,39 @@ describe("Admin", () => {
   });
 });
 
+describe("Privilegios de tabla (fuera de RLS)", () => {
+  const tables = ["profiles", "care_team", "enrollments", "consents", "access_log", "rights_requests"];
+
+  it("ningún usuario autenticado puede vaciar una tabla (TRUNCATE no pasa por RLS)", async () => {
+    for (const t of tables) {
+      await expect(asUser(db.client, c.admin, "aal2", (q) => q(`truncate public.${t} cascade`))).rejects.toThrow(/permission denied/);
+    }
+  });
+
+  it("el anónimo no tiene ningún privilegio sobre las tablas", async () => {
+    const r = await db.client.query(
+      `select table_name, privilege_type from information_schema.role_table_grants where table_schema = 'public' and grantee = 'anon'`,
+    );
+    expect(r.rows).toEqual([]);
+  });
+
+  it("los privilegios de authenticated son exactamente los previstos", async () => {
+    const r = await db.client.query(
+      `select table_name, string_agg(privilege_type, ',' order by privilege_type) as p
+       from information_schema.role_table_grants
+       where table_schema = 'public' and grantee = 'authenticated' group by 1 order by 1`,
+    );
+    expect(Object.fromEntries(r.rows.map((x) => [x.table_name, x.p]))).toEqual({
+      access_log: "SELECT",
+      care_team: "DELETE,INSERT,SELECT,UPDATE",
+      consents: "INSERT,SELECT",
+      enrollments: "INSERT,SELECT,UPDATE",
+      profiles: "SELECT",
+      rights_requests: "INSERT,SELECT,UPDATE",
+    });
+  });
+});
+
 describe("Inmutabilidad y conservación", () => {
   it("la auditoría no se puede modificar ni borrar, ni siquiera como servidor", async () => {
     await asService(db.client, `insert into public.access_log (actor_id, patient_id, action) values ($1, $2, 'seed')`, [c.admin, c.patientA]);
