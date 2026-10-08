@@ -1,5 +1,5 @@
 "use client";
-import { startTransition, useActionState, useState } from "react";
+import { startTransition, useActionState, useRef, useState } from "react";
 import { ANTECEDENTES } from "@/content/cuestionario";
 import { Card, inputClass } from "@/components/ui";
 import { guardarCuestionario, type FormState } from "./actions";
@@ -39,6 +39,14 @@ function Radios({ name, options, value }: { name: string; options: [string, stri
 
 export function IntakeForm({ initial }: { initial: Initial }) {
   const [state, action, pending] = useActionState<FormState, FormData>(guardarCuestionario, {});
+  const formRef = useRef<HTMLFormElement>(null);
+  // Envío manual: evita que React vacíe el formulario si hay errores de validación.
+  const submit = (accion: "enviar" | "borrador") => {
+    if (!formRef.current) return;
+    const fd = new FormData(formRef.current);
+    fd.set("_accion", accion);
+    startTransition(() => action(fd));
+  };
   const [sex, setSex] = useState(str(initial.sex));
   const [glp1, setGlp1] = useState(str(initial.usa_glp1) || "no");
   const e = state.fieldErrors ?? {};
@@ -46,13 +54,12 @@ export function IntakeForm({ initial }: { initial: Initial }) {
 
   return (
     <form
+      ref={formRef}
       className="space-y-6"
       noValidate
       onSubmit={(ev) => {
-        // Envío manual: evita que React vacíe el formulario si hay errores de validación.
         ev.preventDefault();
-        const fd = new FormData(ev.currentTarget, (ev.nativeEvent as SubmitEvent).submitter);
-        startTransition(() => action(fd));
+        submit("enviar");
       }}
     >
       <p className="text-ink-soft">
@@ -196,10 +203,10 @@ export function IntakeForm({ initial }: { initial: Initial }) {
       {state.ok && !state.error && <p className="text-sm text-brand">Guardado.</p>}
 
       <div className="flex flex-col gap-3 sm:flex-row-reverse">
-        <button name="_accion" value="enviar" disabled={pending} className="inline-flex flex-1 items-center justify-center rounded-md bg-brand px-4 py-2.5 font-medium text-brand-ink hover:opacity-90 disabled:opacity-50">
+        <button type="submit" disabled={pending} className="inline-flex flex-1 items-center justify-center rounded-md bg-brand px-4 py-2.5 font-medium text-brand-ink hover:opacity-90 disabled:opacity-50">
           {pending ? "Guardando…" : "Enviar cuestionario"}
         </button>
-        <button name="_accion" value="borrador" disabled={pending} className="inline-flex flex-1 items-center justify-center rounded-md border border-line px-4 py-2.5 font-medium hover:bg-brand-soft disabled:opacity-50">
+        <button type="button" onClick={() => submit("borrador")} disabled={pending} className="inline-flex flex-1 items-center justify-center rounded-md border border-line px-4 py-2.5 font-medium hover:bg-brand-soft disabled:opacity-50">
           Guardar y seguir más tarde
         </button>
       </div>

@@ -66,7 +66,7 @@ export default async function ValoracionPage({ searchParams }: PageProps<"/pacie
                   <li>· Medición inicial de composición corporal y fuerza.</li>
                 </ul>
                 <p className="mt-6 text-3xl font-semibold">{eur(PRECIO_VALORACION_CENTS)}</p>
-                <p className="text-sm text-ink-soft">Pago único.</p>
+                <p className="text-sm text-ink-soft">Pago único. Asistencia sanitaria exenta de IVA.</p>
                 <form action={iniciarPago} className="mt-6">
                   <button className="inline-flex w-full items-center justify-center rounded-md bg-brand px-4 py-2.5 font-medium text-brand-ink hover:opacity-90">
                     Pagar con tarjeta

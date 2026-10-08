@@ -57,8 +57,11 @@ export default function Home() {
 
       <footer className="border-t border-line">
         <div className="mx-auto flex w-full max-w-5xl flex-col gap-1 px-4 py-6 text-sm text-ink-soft sm:flex-row sm:justify-between">
-          <span>NoBack es un servicio de Longevidad y Salud 360.</span>
-          <span>La información de esta web no sustituye la consulta médica.</span>
+          <span>NoBack es un servicio de Longevidad y Salud 360. La información de esta web no sustituye la consulta médica.</span>
+          <span className="flex gap-4">
+            <Link href="/privacidad" className="hover:text-ink">Privacidad</Link>
+            <Link href="/aviso-legal" className="hover:text-ink">Aviso legal</Link>
+          </span>
         </div>
       </footer>
     </div>

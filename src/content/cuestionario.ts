@@ -31,8 +31,15 @@ const texto = (max: number) =>
     .optional()
     .transform((v) => (v ? v : undefined));
 
-const numero = (min: number, max: number, campo: string) =>
-  z.coerce.number({ error: `Indica ${campo}` }).min(min, `${campo}: valor demasiado bajo`).max(max, `${campo}: valor demasiado alto`);
+const limpiaNumero = (v: unknown) => (v === "" || v == null ? undefined : typeof v === "string" ? v.replace(",", ".") : v);
+const numeroBase = (min: number, max: number, campo: string) =>
+  z.coerce
+    .number({ error: `Indica ${campo}` })
+    .min(min, `Revisa ${campo}: parece demasiado bajo`)
+    .max(max, `Revisa ${campo}: parece demasiado alto`);
+const numero = (min: number, max: number, campo: string) => z.preprocess(limpiaNumero, numeroBase(min, max, campo));
+const numeroOpcional = (min: number, max: number, campo: string) =>
+  z.preprocess(limpiaNumero, numeroBase(min, max, campo).optional());
 
 export const datosPersonalesSchema = z.object({
   birth_date: z.iso.date({ error: "Indica tu fecha de nacimiento" }).refine((d) => edad(d) >= 18, "El programa es solo para mayores de 18 años"),
@@ -43,7 +50,7 @@ export const intakeSchema = z
   .object({
     peso_kg: numero(30, 350, "el peso"),
     altura_cm: numero(120, 230, "la altura"),
-    cintura_cm: z.preprocess((v) => (v === "" || v == null ? undefined : v), numero(40, 250, "la cintura").optional()),
+    cintura_cm: numeroOpcional(40, 250, "la cintura"),
     objetivo: z.string().trim().min(3, "Cuéntanos brevemente tu objetivo").max(600),
     antecedentes: z.array(z.enum(antecedenteKeys)).default([]),
     otros_antecedentes: texto(600),

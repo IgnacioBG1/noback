@@ -6,7 +6,8 @@ let client: Stripe | null = null;
 export function stripe(): Stripe {
   const key = process.env.STRIPE_SECRET_KEY;
   if (!key) throw new Error("Falta STRIPE_SECRET_KEY");
-  client ??= new Stripe(key);
+  // Cliente fetch: funciona igual en Vercel y detrás de proxies HTTP.
+  client ??= new Stripe(key, { httpClient: Stripe.createFetchHttpClient() });
   return client;
 }
 

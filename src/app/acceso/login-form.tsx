@@ -1,11 +1,9 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { createSupabaseBrowser } from "@/lib/supabase/browser";
 import { buttonClass, inputClass } from "@/components/ui";
 
 export function LoginForm({ next }: { next: string }) {
-  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -22,9 +20,9 @@ export function LoginForm({ next }: { next: string }) {
       setError("Correo o contraseña incorrectos.");
       return;
     }
-    // El servidor decide el destino según el rol y el doble factor.
-    router.replace(next || "/acceso");
-    router.refresh();
+    // Navegación completa: el servidor decide el destino según el rol y el doble factor
+    // (/paciente envía al personal a /clinica, y /clinica a la verificación en dos pasos).
+    window.location.assign(next || "/paciente");
   }
 
   return (

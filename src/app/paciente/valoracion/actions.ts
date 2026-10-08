@@ -79,7 +79,10 @@ export async function guardarCuestionario(_prev: FormState, formData: FormData):
   if (personal.success) Object.assign(perfil, personal.data);
   if (Object.keys(perfil).length) {
     const { error } = await supabase.from("profiles").update(perfil).eq("id", userId);
-    if (error) return { error: "No se han podido guardar tus datos personales." };
+    if (error) {
+      console.error("guardarCuestionario perfil", error.code, error.message);
+      return { error: "No se han podido guardar tus datos personales." };
+    }
   }
 
   // Borrador: guardamos lo que haya (sin validar del todo); envío: solo datos validados.
@@ -90,7 +93,10 @@ export async function guardarCuestionario(_prev: FormState, formData: FormData):
   const saved = existing
     ? await supabase.from("intake_forms").update({ answers, form_version: INTAKE_VERSION }).eq("patient_id", userId)
     : await supabase.from("intake_forms").insert({ patient_id: userId, answers, form_version: INTAKE_VERSION });
-  if (saved.error) return { error: "No se ha podido guardar el cuestionario." };
+  if (saved.error) {
+    console.error("guardarCuestionario", saved.error.code, saved.error.message);
+    return { error: "No se ha podido guardar el cuestionario." };
+  }
   if (enviar) {
     const sent = await supabase.from("intake_forms").update({ status: "enviado" }).eq("patient_id", userId);
     if (sent.error) return { error: "No se ha podido enviar el cuestionario." };
@@ -120,6 +126,7 @@ export async function iniciarPago(): Promise<void> {
     {
       mode: "payment",
       locale: "es",
+      adaptive_pricing: { enabled: false }, // cobrar siempre en euros
       currency: "eur",
       client_reference_id: pago.id,
       customer_email: authUser.user?.email ?? undefined,
