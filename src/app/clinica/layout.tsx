@@ -19,7 +19,7 @@ export default async function ClinicaLayout({ children }: LayoutProps<"/clinica"
     { href: "/clinica/valoraciones", label: "Valoraciones", icon: "clipboard", count: pendientes.length, alert: true },
     { href: "/clinica/mensajes", label: "Mensajes escalados", icon: "message", soon: true },
     { href: "/clinica/agenda", label: "Agenda", icon: "calendar", soon: true },
-    { href: "/clinica/equipo", label: "Equipo", icon: "team", soon: true },
+    { href: "/clinica/equipo", label: "Equipo", icon: "team", soon: staff.role !== "admin" },
   ];
   const quien = [staff.first_name, staff.last_name].filter(Boolean).join(" ") || "Tu cuenta";
 

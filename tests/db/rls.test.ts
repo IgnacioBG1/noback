@@ -147,7 +147,7 @@ describe("Admin", () => {
 });
 
 describe("Privilegios de tabla (fuera de RLS)", () => {
-  const tables = ["profiles", "care_team", "enrollments", "consents", "access_log", "rights_requests", "intake_forms", "payments"];
+  const tables = ["profiles", "care_team", "enrollments", "consents", "access_log", "rights_requests", "intake_forms", "payments", "encounters", "measurements", "care_plans"];
 
   it("ningún usuario autenticado puede vaciar una tabla (TRUNCATE no pasa por RLS)", async () => {
     for (const t of tables) {
@@ -170,13 +170,16 @@ describe("Privilegios de tabla (fuera de RLS)", () => {
     );
     expect(Object.fromEntries(r.rows.map((x) => [x.table_name, x.p]))).toEqual({
       access_log: "SELECT",
-      care_team: "DELETE,INSERT,SELECT,UPDATE",
+      care_team: "INSERT,SELECT,UPDATE",
       consents: "INSERT,SELECT",
       enrollments: "INSERT,SELECT,UPDATE",
       profiles: "SELECT",
       rights_requests: "INSERT,SELECT,UPDATE",
       intake_forms: "INSERT,SELECT",
       payments: "SELECT",
+      encounters: "INSERT,SELECT",
+      measurements: "INSERT,SELECT",
+      care_plans: "INSERT,SELECT",
     });
   });
 });

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Badge, Card, CardTitle, Icon } from "@/components/ui";
+import Link from "next/link";
+import { Badge, Card, CardTitle, Icon, StatCard, fmtFecha } from "@/components/ui";
+import { FASE_DIETA_LABEL } from "@/lib/historia";
 import { getResumenPaciente } from "@/lib/paciente";
-import { ROUTE_LABEL } from "@/lib/clinica-labels";
 
 export const metadata: Metadata = { title: "Mi plan" };
 
@@ -18,7 +19,8 @@ const PILARES = [
   { icon: "team", t: "Equipo humano", d: "Tu médico decide; el asistente te acompaña a diario y avisa al equipo." },
 ];
 
-export default async function PlanPage() {
+export default async function PlanPage({ searchParams }: PageProps<"/paciente/plan">) {
+  const sp = await searchParams;
   const r = await getResumenPaciente();
   const fase = r.inscripcion?.phase ?? null;
   const idx = fase ? FASES.findIndex((f) => f.key === fase) : -1;
@@ -28,14 +30,66 @@ export default async function PlanPage() {
       <header>
         <p className="text-[13px] text-ink-soft">Mi plan</p>
         <h1 className="mt-1 text-2xl font-semibold tracking-tight sm:text-[28px]">
-          {r.inscripcion?.route ? `Ruta ${ROUTE_LABEL[r.inscripcion.route].toLowerCase()}` : "Tu plan se decide en la consulta"}
+          {r.plan ? (r.plan.route === "farmaco" ? "Ruta con tratamiento farmacológico" : "Ruta sin fármaco · dieta proteinada") : "Tu plan se decide en la consulta"}
         </h1>
-        {!r.inscripcion?.route && (
+        {!r.plan && (
           <p className="mt-1 max-w-2xl text-ink-soft">
             Tras tu analítica y la medición inicial, tu médico revisará tu caso y elegirá contigo la ruta que mejor encaja. Aquí verás tu plan en cuanto esté listo.
           </p>
         )}
       </header>
+
+      {sp.firmado === "1" && (
+        <p role="status" className="rounded-xl border border-brand bg-brand-soft px-4 py-3 text-sm text-brand">
+          Consentimiento firmado. Tu plan ya está en marcha.
+        </p>
+      )}
+
+      {r.plan && r.consentimiento && !r.consentimiento.firmado && (
+        <Card tone="warn">
+          <p className="flex items-center gap-2 font-semibold text-warn-ink">
+            <Icon name="shield" size={18} /> Antes de empezar, firma el consentimiento de tu tratamiento
+          </p>
+          <p className="mt-1 text-sm">Explica en qué consiste, sus beneficios, sus riesgos y las alternativas. Léelo con calma.</p>
+          <Link href="/paciente/plan/consentimiento" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-warn px-4 py-2.5 text-sm font-medium text-white hover:opacity-90">
+            Leer y firmar <Icon name="arrow" size={16} />
+          </Link>
+        </Card>
+      )}
+
+      {r.plan && (
+        <>
+          <section className="grid grid-cols-3 gap-3" aria-label="Tus objetivos">
+            <StatCard label="Proteína al día" value={r.plan.proteina_g_dia ?? "—"} unit={r.plan.proteina_g_dia ? "g" : undefined} tone="brand" />
+            <StatCard label="Fuerza a la semana" value={r.plan.fuerza_sesiones_semana ?? "—"} unit={r.plan.fuerza_sesiones_semana != null ? "sesiones" : undefined} />
+            <StatCard label="Pasos al día" value={r.plan.pasos_dia ? r.plan.pasos_dia.toLocaleString("es-ES") : "—"} />
+          </section>
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Card>
+              <CardTitle aside={r.plan.proxima_revision ? `próxima revisión ${fmtFecha(r.plan.proxima_revision, { day: "numeric", month: "long" })}` : undefined}>
+                {r.plan.route === "farmaco" ? "Tu tratamiento" : "Tu dieta"}
+              </CardTitle>
+              {r.plan.route === "farmaco" ? (
+                <p className="text-[15px] whitespace-pre-line">{r.plan.medicacion}</p>
+              ) : (
+                <>
+                  <Badge tone="brand">{r.plan.fase_dieta ? FASE_DIETA_LABEL[r.plan.fase_dieta] : "Fase por indicar"}</Badge>
+                  <p className="mt-3 text-sm text-ink-soft">Sigue las indicaciones de tu médico sobre alimentos, preparados y suplementos de esta fase. No la alargues más de lo indicado.</p>
+                </>
+              )}
+              {r.consentimiento?.firmado && (
+                <Link href="/paciente/plan/consentimiento" className="mt-4 inline-flex items-center gap-1 text-xs text-ink-soft hover:text-brand">
+                  <Icon name="shield" size={14} /> Consentimiento firmado el {fmtFecha(r.consentimiento.fecha)}
+                </Link>
+              )}
+            </Card>
+            <Card>
+              <CardTitle>Indicaciones de tu médico</CardTitle>
+              <p className="text-[15px] whitespace-pre-line">{r.plan.indicaciones || "Tu médico no ha añadido indicaciones adicionales."}</p>
+            </Card>
+          </div>
+        </>
+      )}
 
       <Card>
         <CardTitle>Las fases del programa</CardTitle>
@@ -54,7 +108,8 @@ export default async function PlanPage() {
         </ol>
       </Card>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className={`grid gap-4 ${r.plan ? "" : "lg:grid-cols-2"}`}>
+        {!r.plan && (
         <Card>
           <CardTitle>Dos rutas, un mismo objetivo</CardTitle>
           <div className="space-y-3">
@@ -73,6 +128,7 @@ export default async function PlanPage() {
           </div>
           <p className="mt-3 text-xs text-ink-soft">La decisión es siempre médica y la tomáis juntos en la consulta.</p>
         </Card>
+        )}
         <Card>
           <CardTitle>En qué se basa</CardTitle>
           <ul className="grid gap-4 sm:grid-cols-2">

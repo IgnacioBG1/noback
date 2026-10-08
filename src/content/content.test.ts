@@ -1,12 +1,12 @@
 import { describe, expect, it } from "vitest";
 import lock from "./consentimientos.lock.json";
-import { CONSENT_DOCS, REQUIRED_CONSENTS } from "./consentimientos";
+import { CONSENT_DOCS, REQUIRED_CONSENTS, TREATMENT_DOCS } from "./consentimientos";
 import { consentHash } from "./hash";
 import { datosPersonalesSchema, edad, imc, intakeSchema } from "./cuestionario";
 
 describe("Consentimientos", () => {
   it("cualquier cambio de texto exige una versión nueva (hash fijado en el .lock)", () => {
-    for (const d of CONSENT_DOCS) {
+    for (const d of [...CONSENT_DOCS, ...TREATMENT_DOCS]) {
       const key = `${d.kind}@${d.version}` as keyof typeof lock;
       expect(lock[key], `Falta ${key} en consentimientos.lock.json: sube la versión y regenera el lock`).toBe(consentHash(d));
     }
@@ -15,8 +15,8 @@ describe("Consentimientos", () => {
     expect(REQUIRED_CONSENTS.sort()).toEqual(["privacidad", "telemedicina_whatsapp"]);
   });
   it("los textos públicos no nombran medicamentos", () => {
-    const all = JSON.stringify(CONSENT_DOCS).toLowerCase();
-    for (const w of ["semaglutida", "tirzepatida", "wegovy", "mounjaro", "ozempic", "glp-1", "glp1"]) expect(all).not.toContain(w);
+    const all = JSON.stringify([...CONSENT_DOCS, ...TREATMENT_DOCS].map(({ title, checkbox, body }) => ({ title, checkbox, body }))).toLowerCase();
+    for (const w of ["semaglutida", "tirzepatida", "wegovy", "mounjaro", "ozempic", "saxenda", "liraglutida", "glp-1", "glp1"]) expect(all).not.toContain(w);
   });
 });
 

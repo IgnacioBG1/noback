@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardTitle, Icon, Steps } from "@/components/ui";
-import { LoQueMediremos, PuntoDePartida } from "@/components/patient-blocks";
+import { Composicion, LoQueMediremos, PuntoDePartida } from "@/components/patient-blocks";
 import { getResumenPaciente, recorrido } from "@/lib/paciente";
 import type { Paso } from "@/lib/valoracion";
 import { PHASE_LABEL } from "@/lib/clinica-labels";
@@ -22,8 +22,33 @@ const siguiente: Record<Paso, { titulo: string; texto: string; cta?: string }> =
 
 export default async function InicioPaciente() {
   const r = await getResumenPaciente();
-  const s = siguiente[r.paso];
   const fase = r.inscripcion ? PHASE_LABEL[r.inscripcion.phase] : "Antes de empezar";
+  const s: { titulo: string; texto: string; cta?: string; href: string } = r.plan
+    ? r.consentimiento?.firmado
+      ? {
+          titulo: "Tu plan está en marcha",
+          texto: [
+            r.plan.proteina_g_dia ? `${r.plan.proteina_g_dia} g de proteína al día` : null,
+            r.plan.fuerza_sesiones_semana ? `${r.plan.fuerza_sesiones_semana} sesiones de fuerza a la semana` : null,
+            r.plan.pasos_dia ? `${r.plan.pasos_dia.toLocaleString("es-ES")} pasos al día` : null,
+          ]
+            .filter(Boolean)
+            .join(" · ") || "Revisa las indicaciones de tu médico.",
+          cta: "Ver mi plan",
+          href: "/paciente/plan",
+        }
+      : {
+          titulo: "Firma el consentimiento de tu tratamiento",
+          texto: "Tu médico ya ha preparado tu plan. Antes de empezar, lee y firma el consentimiento informado.",
+          cta: "Leer y firmar",
+          href: "/paciente/plan/consentimiento",
+        }
+    : { ...siguiente[r.paso], href: "/paciente/valoracion" };
+  const oscuro = r.paso === "recibida" && !r.plan;
+  const nombre = (role: string) => {
+    const m = r.equipo.find((e) => e.staff_role === role);
+    return m ? [m.first_name, m.last_name].filter(Boolean).join(" ") : null;
+  };
 
   return (
     <div className="space-y-4">
@@ -34,18 +59,24 @@ export default async function InicioPaciente() {
 
       <div className="grid gap-4 lg:grid-cols-5">
         <div className="space-y-4 lg:col-span-3">
-          <Card tone={r.paso === "recibida" ? "dark" : "brand"}>
-            <p className={`text-xs font-medium tracking-wide uppercase ${r.paso === "recibida" ? "text-side-soft" : "text-white/70"}`}>Siguiente paso</p>
+          <Card tone={oscuro ? "dark" : "brand"}>
+            <p className={`text-xs font-medium tracking-wide uppercase ${oscuro ? "text-side-soft" : "text-white/70"}`}>Siguiente paso</p>
             <h2 className="mt-2 text-lg font-semibold">{s.titulo}</h2>
-            <p className={`mt-1 text-sm ${r.paso === "recibida" ? "text-side-soft" : "text-white/85"}`}>{s.texto}</p>
+            <p className={`mt-1 text-sm ${oscuro ? "text-side-soft" : "text-white/85"}`}>{s.texto}</p>
             {s.cta && (
-              <Link href="/paciente/valoracion" className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-brand hover:bg-brand-soft">
+              <Link href={s.href} className="mt-5 inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-medium text-brand hover:bg-brand-soft">
                 {s.cta} <Icon name="arrow" size={16} />
               </Link>
             )}
           </Card>
-          <PuntoDePartida answers={r.intake?.answers} />
-          <LoQueMediremos />
+          {r.medidas.length ? (
+            <Composicion medidas={r.medidas} />
+          ) : (
+            <>
+              <PuntoDePartida answers={r.intake?.answers} />
+              <LoQueMediremos />
+            </>
+          )}
         </div>
 
         <div className="space-y-4 lg:col-span-2">
@@ -57,8 +88,8 @@ export default async function InicioPaciente() {
             <CardTitle>Tu equipo</CardTitle>
             <ul className="space-y-3 text-sm">
               {[
-                ["team", "Tu médico", "Se te asignará para la consulta de valoración."],
-                ["grip", "Tu entrenador", "Diseñará tu plan de fuerza cuando empieces."],
+                ["team", nombre("doctor") ?? "Tu médico", nombre("doctor") ? "Tu médico" : "Se te asignará para la consulta de valoración."],
+                ["grip", nombre("trainer") ?? "Tu entrenador", nombre("trainer") ? "Tu entrenador" : "Diseñará tu plan de fuerza cuando empieces."],
                 ["message", "Asistente por WhatsApp", "Te acompañará en el día a día y avisará al equipo si hace falta."],
               ].map(([i, t, d]) => (
                 <li key={t} className="flex gap-3">
