@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge, Card, CardTitle, Icon, StatCard, fmtFecha } from "@/components/ui";
-import { FASE_DIETA_LABEL } from "@/lib/historia";
+import { fase as faseDe } from "@/content/essential";
+import { ProtocoloFase } from "@/components/protocolo-fase";
 import { getResumenPaciente } from "@/lib/paciente";
 
 export const metadata: Metadata = { title: "Mi plan" };
@@ -72,10 +73,7 @@ export default async function PlanPage({ searchParams }: PageProps<"/paciente/pl
               {r.plan.route === "farmaco" ? (
                 <p className="text-[15px] whitespace-pre-line">{r.plan.medicacion}</p>
               ) : (
-                <>
-                  <Badge tone="brand">{r.plan.fase_dieta ? FASE_DIETA_LABEL[r.plan.fase_dieta] : "Fase por indicar"}</Badge>
-                  <p className="mt-3 text-sm text-ink-soft">Sigue las indicaciones de tu médico sobre alimentos, preparados y suplementos de esta fase. No la alargues más de lo indicado.</p>
-                </>
+                <p className="text-sm text-ink-soft">Dieta proteinada del Método Essential, por fases. Tu fase de ahora y todo lo que puedes comer y beber está justo debajo.</p>
               )}
               {r.consentimiento?.firmado && (
                 <Link href="/paciente/plan/consentimiento" className="mt-4 inline-flex items-center gap-1 text-xs text-ink-soft hover:text-brand">
@@ -88,6 +86,16 @@ export default async function PlanPage({ searchParams }: PageProps<"/paciente/pl
               <p className="text-[15px] whitespace-pre-line">{r.plan.indicaciones || "Tu médico no ha añadido indicaciones adicionales."}</p>
             </Card>
           </div>
+          {r.plan.route === "sin_farmaco" && faseDe(r.plan.fase_dieta) && (
+            <ProtocoloFase
+              fase={faseDe(r.plan.fase_dieta)!}
+              productosDia={r.plan.productos_dia}
+              periodoDias={r.plan.periodo_dias}
+              inicio={r.plan.fase_inicio}
+              mixtoOpcion={r.plan.mixto_opcion}
+              suplementos={r.plan.suplementos ?? []}
+            />
+          )}
         </>
       )}
 

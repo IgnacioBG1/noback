@@ -16,7 +16,10 @@ export async function registrarConsulta(_prev: ConsultaState, fd: FormData): Pro
 
   const patient = z.uuid().safeParse(fd.get("patient_id"));
   if (!patient.success) return { error: "Paciente no válido." };
-  const raw = Object.fromEntries([...fd.entries()].filter(([k]) => !k.startsWith("$")).map(([k, v]) => [k, String(v)]));
+  const raw: Record<string, unknown> = {
+    ...Object.fromEntries([...fd.entries()].filter(([k]) => !k.startsWith("$") && k !== "suplementos").map(([k, v]) => [k, String(v)])),
+    suplementos: fd.getAll("suplementos").map(String),
+  };
 
   const enc = encuentroSchema.safeParse(raw);
   const med = medicionSchema.safeParse(raw);

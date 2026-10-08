@@ -33,6 +33,11 @@ export type CarePlan = {
   fuerza_sesiones_semana: number | null;
   pasos_dia: number | null;
   fase_dieta: string | null;
+  productos_dia: number | null;
+  periodo_dias: number | null;
+  fase_inicio: string | null;
+  mixto_opcion: string | null;
+  suplementos: string[];
   medicacion: string | null;
   indicaciones: string | null;
   proxima_revision: string | null;
@@ -43,12 +48,6 @@ export type Historia = { encounters: Encounter[]; measurements: Measurement[]; p
 
 export const KIND_LABEL: Record<string, string> = { valoracion: "Valoración", seguimiento: "Seguimiento", otra: "Otra" };
 export const MODALITY_LABEL: Record<string, string> = { presencial: "Presencial", video: "Videoconsulta", telefono: "Teléfono" };
-export const FASE_DIETA_LABEL: Record<string, string> = {
-  fase_1: "Fase 1 · Inicio",
-  fase_2: "Fase 2",
-  fase_3: "Fase 3",
-  reintroduccion: "Reintroducción",
-};
 
 /** Numeric de Postgres llega como texto en JSON: lo normalizamos. */
 export function normalizaMedicion(m: Record<string, unknown>): Measurement {

@@ -58,3 +58,22 @@ describe("Cuestionario", () => {
     expect(imc(92.5, 170)).toBe(32);
   });
 });
+
+import { FASES, SUPLEMENTOS } from "./essential";
+describe("Fases Essential", () => {
+  it("13 fases con contenido completo y claves únicas", () => {
+    expect(FASES).toHaveLength(13);
+    expect(new Set(FASES.map((f) => f.key)).size).toBe(13);
+    for (const f of FASES) {
+      expect(f.comidas?.length || f.opciones?.length || f.mantenimiento?.length, f.key).toBeTruthy();
+      expect(f.bebidas.length, f.key).toBeGreaterThan(0);
+      expect(f.aliño.length, f.key).toBeGreaterThan(0);
+    }
+    expect(new Set(SUPLEMENTOS.map((s) => s.key)).size).toBe(SUPLEMENTOS.length);
+  });
+  it("síndrome metabólico sin lista 2; fases 1 y 2 con límite de la lista 2", () => {
+    expect(FASES.find((f) => f.key === "sm_1")!.verduras.listas).toHaveLength(1);
+    expect(FASES.find((f) => f.key === "fase_2_1")!.verduras.listas[1].nota).toMatch(/150 g/);
+    expect(FASES.find((f) => f.key === "sm_2_1")!.verduras.listas[0].items).toContain("Pepinillo natural");
+  });
+});

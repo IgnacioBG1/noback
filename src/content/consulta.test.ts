@@ -18,6 +18,8 @@ describe("Consulta", () => {
     expect(f.fase_dieta).toBeUndefined();
     const s = planSchema.parse({ route: "sin_farmaco", fase_dieta: "fase_1", medicacion: "x" });
     expect(s.medicacion).toBeNull();
+    expect(planSchema.safeParse({ route: "sin_farmaco", fase_dieta: "mixto" }).success).toBe(false);
+    expect(planSchema.parse({ route: "sin_farmaco", fase_dieta: "mixto", mixto_opcion: "B", productos_dia: "3", suplementos: ["oligovit"] })).toMatchObject({ mixto_opcion: "B", productos_dia: 3, suplementos: ["oligovit"] });
   });
   it("convierte la hora de Madrid a UTC (verano e invierno)", () => {
     expect(madridAIso("2026-07-01T10:00")).toBe("2026-07-01T08:00:00.000Z");

@@ -3,6 +3,7 @@ import { startTransition, useActionState, useRef, useState } from "react";
 import Link from "next/link";
 import { Card, CardTitle, buttonClass, ghostButtonClass, inputClass } from "@/components/ui";
 import { registrarConsulta, type ConsultaState } from "./actions";
+import { FasePicker, SuplementosPicker } from "@/components/fase-picker";
 
 type Plan = {
   route: string;
@@ -10,6 +11,10 @@ type Plan = {
   fuerza_sesiones_semana: number | null;
   pasos_dia: number | null;
   fase_dieta: string | null;
+  productos_dia: number | null;
+  periodo_dias: number | null;
+  mixto_opcion: string | null;
+  suplementos: string[];
   medicacion: string | null;
   indicaciones: string | null;
 } | null;
@@ -178,9 +183,13 @@ export function ConsultaForm({
               </Field>
             )}
             {route === "sin_farmaco" && (
-              <Field label="Fase de la dieta" name="fase_dieta" error={e.fase_dieta} className="md:col-span-3">
-                <Chips name="fase_dieta" value={s(planActual?.fase_dieta) || "fase_1"} options={[["fase_1", "Fase 1"], ["fase_2", "Fase 2"], ["fase_3", "Fase 3"], ["reintroduccion", "Reintroducción"]]} />
-              </Field>
+              <div className="space-y-4 md:col-span-3">
+                <div>
+                  <p className="mb-2 text-sm font-medium">Fase de la dieta proteinada</p>
+                  <FasePicker fase={planActual?.fase_dieta} productosDia={planActual?.productos_dia} periodoDias={planActual?.periodo_dias} mixto={planActual?.mixto_opcion} errors={e} />
+                </div>
+                <SuplementosPicker seleccion={planActual?.suplementos ?? []} />
+              </div>
             )}
             <Field label="Indicaciones para el paciente" name="indicaciones" error={e.indicaciones} hint="Texto que verá en su app, en lenguaje sencillo." className="md:col-span-2">
               <textarea id="indicaciones" name="indicaciones" rows={4} defaultValue={s(planActual?.indicaciones)} className={inputClass} />

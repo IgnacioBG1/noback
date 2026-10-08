@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Badge, Card, CardTitle, EmptyState, Icon, StatCard, Steps, fmtFecha, fmtNum, linkButtonClass, nombreCompleto } from "@/components/ui";
-import { FASE_DIETA_LABEL, KIND_LABEL, MODALITY_LABEL, normalizaMedicion, type Historia } from "@/lib/historia";
+import { KIND_LABEL, MODALITY_LABEL, normalizaMedicion, type Historia } from "@/lib/historia";
 import { TREATMENT_CONSENT_FOR_ROUTE } from "@/content/consentimientos";
+import { fase as faseDe, faseNombre, SUPLEMENTOS } from "@/content/essential";
+import { CambiarFaseForm } from "./fase-form";
 import { Avatar, EstadoBadge } from "@/components/clinic-tables";
 import { createSupabaseServer } from "@/lib/supabase/server";
 import { ROUTE_LABEL } from "@/lib/clinica";
@@ -186,7 +188,7 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
               ]}
             />
           </Card>
-          <PlanCard plan={plan} firmado={firmado} consentAt={consent?.created_at ?? null} />
+          <PlanCard plan={plan} firmado={firmado} consentAt={consent?.created_at ?? null} patientId={id} />
           <p className="flex gap-2 px-1 text-xs text-ink-soft">
             <Icon name="shield" size={14} className="mt-0.5 shrink-0" />
             La receta (plataforma del Colegio de Médicos) y la videoconsulta se hacen fuera de NoBack. Deja la referencia en el plan de la nota.
@@ -197,7 +199,7 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
   );
 }
 
-function PlanCard({ plan, firmado, consentAt }: { plan: Historia["plans"][number] | null; firmado: boolean; consentAt: string | null }) {
+function PlanCard({ plan, firmado, consentAt, patientId }: { plan: Historia["plans"][number] | null; firmado: boolean; consentAt: string | null; patientId: string }) {
   if (!plan)
     return (
       <Card>
@@ -210,7 +212,21 @@ function PlanCard({ plan, firmado, consentAt }: { plan: Historia["plans"][number
   const filas: [string, React.ReactNode][] = [
     ["Ruta", ROUTE_LABEL[plan.route]],
     ...(plan.route === "farmaco" ? ([["Medicación", plan.medicacion ?? "—"]] as [string, React.ReactNode][]) : []),
-    ...(plan.route === "sin_farmaco" ? ([["Dieta", plan.fase_dieta ? FASE_DIETA_LABEL[plan.fase_dieta] : "—"]] as [string, React.ReactNode][]) : []),
+    ...(plan.route === "sin_farmaco"
+      ? ([
+          [
+            "Fase",
+            <span key="f" className="inline-flex items-center gap-1.5">
+              <span aria-hidden className="size-2.5 rounded-full" style={{ background: faseDe(plan.fase_dieta)?.color }} />
+              {faseNombre(plan.fase_dieta)}
+              {plan.mixto_opcion ? ` · opción ${plan.mixto_opcion}` : ""}
+            </span>,
+          ],
+          ["Productos Essential", plan.productos_dia != null ? <span className="num">{plan.productos_dia} /día</span> : "—"],
+          ["Periodo", plan.periodo_dias ? <span><span className="num">{plan.periodo_dias}</span> días desde {fmtFecha(plan.fase_inicio, { day: "numeric", month: "short" })}</span> : "—"],
+          ["Suplementos", plan.suplementos?.length ? plan.suplementos.map((k) => SUPLEMENTOS.find((x) => x.key === k)?.nombre ?? k).join(", ") : "—"],
+        ] as [string, React.ReactNode][])
+      : []),
     ["Proteína", plan.proteina_g_dia ? <span className="num">{plan.proteina_g_dia} g/día</span> : "—"],
     ["Fuerza", plan.fuerza_sesiones_semana != null ? <span className="num">{plan.fuerza_sesiones_semana} /semana</span> : "—"],
     ["Pasos", plan.pasos_dia ? <span className="num">{plan.pasos_dia.toLocaleString("es-ES")} /día</span> : "—"],
@@ -227,6 +243,9 @@ function PlanCard({ plan, firmado, consentAt }: { plan: Historia["plans"][number
           </div>
         ))}
       </dl>
+      {plan.route === "sin_farmaco" && (
+        <CambiarFaseForm patientId={patientId} fase={plan.fase_dieta} productosDia={plan.productos_dia} periodoDias={plan.periodo_dias} mixto={plan.mixto_opcion} />
+      )}
       <div className={`mt-4 rounded-lg px-3 py-2 text-sm ${firmado ? "bg-ok-soft text-ok" : "bg-warn-soft text-warn-ink"}`}>
         {firmado ? `Consentimiento firmado el ${fmtFecha(consentAt)}` : "Consentimiento del tratamiento pendiente de firma"}
       </div>

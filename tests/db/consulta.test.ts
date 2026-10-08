@@ -143,3 +143,35 @@ describe("Equipo asignado", () => {
     ).rejects.toThrow(/row-level security/);
   });
 });
+
+describe("Fases de la dieta", () => {
+  it("el médico cambia la fase sin nota; el plan anterior queda enlazado y mantenimiento mueve la inscripción", async () => {
+    const r = await asUser(db.client, c.doctor, "aal2", async (q) => {
+      await q(`select public.registrar_consulta($1, $2, null, $3)`, [
+        c.patientA,
+        { kind: "valoracion", plan: "Inicio" },
+        { route: "sin_farmaco", fase_dieta: "fase_1", productos_dia: 5, periodo_dias: 21, suplementos: ["oligovit", "vitamina_d3"] },
+      ]);
+      await q(`select public.cambiar_fase($1, 'fase_2_1', 4, 14)`, [c.patientA]);
+      const planes = (await q(`select fase_dieta, productos_dia, periodo_dias, suplementos, supersedes, fase_inicio from public.care_plans where patient_id = $1 order by created_at`, [c.patientA])).rows;
+      await q(`select public.cambiar_fase($1, 'mantenimiento')`, [c.patientA]);
+      const enr = (await q(`select phase from public.enrollments where patient_id = $1`, [c.patientA])).rows[0];
+      return { planes, enr };
+    });
+    expect(r.planes.at(-1)!).toMatchObject({ fase_dieta: "fase_2_1", productos_dia: 4, periodo_dias: 14, suplementos: ["oligovit", "vitamina_d3"] });
+    expect(r.planes.at(-1)!.supersedes).not.toBeNull();
+    expect(r.planes.at(-1)!.fase_inicio).not.toBeNull();
+    expect(r.enr.phase).toBe("mantenimiento");
+  });
+
+  it("solo fases conocidas, y ni el entrenador ni el paciente pueden cambiarla", async () => {
+    await expect(
+      asUser(db.client, c.doctor, "aal2", async (q) => {
+        await q(`select public.registrar_consulta($1, $2, null, $3)`, [c.patientA, { kind: "valoracion", plan: "x" }, { route: "sin_farmaco", fase_dieta: "fase_1" }]);
+        await q(`select public.cambiar_fase($1, 'fase_9')`, [c.patientA]);
+      }),
+    ).rejects.toThrow(/check constraint/);
+    await expect(asUser(db.client, c.trainer, "aal2", (q) => q(`select public.cambiar_fase($1, 'fase_1')`, [c.patientA]))).rejects.toThrow(/Sin permiso/);
+    await expect(asUser(db.client, c.patientA, "aal1", (q) => q(`select public.cambiar_fase($1, 'fase_1')`, [c.patientA]))).rejects.toThrow(/doble factor/);
+  });
+});

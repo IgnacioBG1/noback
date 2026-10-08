@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { FASE_KEYS, SUPLEMENTO_KEYS } from "./essential";
 
 /** Validación de la nota de consulta, las mediciones y el plan que registra el médico. */
 const texto = (max: number) =>
@@ -55,7 +56,11 @@ export const planSchema = z
     proteina_g_dia: num(40, 300, "la proteína", true),
     fuerza_sesiones_semana: num(0, 7, "las sesiones", true),
     pasos_dia: num(0, 40000, "los pasos", true),
-    fase_dieta: z.enum(["fase_1", "fase_2", "fase_3", "reintroduccion"]).optional().or(z.literal("").transform(() => undefined)),
+    fase_dieta: z.enum(FASE_KEYS).optional().or(z.literal("").transform(() => undefined)),
+    productos_dia: num(0, 8, "los productos al día", true),
+    periodo_dias: num(1, 365, "el periodo", true),
+    mixto_opcion: z.enum(["A", "B", "C"]).optional().or(z.literal("").transform(() => undefined)),
+    suplementos: z.array(z.enum(SUPLEMENTO_KEYS)).max(25).default([]),
     medicacion: texto(1000),
     indicaciones: texto(4000),
     proxima_revision: z.iso.date().optional().or(z.literal("").transform(() => undefined)),
@@ -65,9 +70,23 @@ export const planSchema = z
     // Cada ruta guarda solo sus campos.
     medicacion: v.route === "farmaco" ? v.medicacion : null,
     fase_dieta: v.route === "sin_farmaco" ? v.fase_dieta : undefined,
+    productos_dia: v.route === "sin_farmaco" ? v.productos_dia : undefined,
+    periodo_dias: v.route === "sin_farmaco" ? v.periodo_dias : undefined,
+    mixto_opcion: v.route === "sin_farmaco" && v.fase_dieta === "mixto" ? v.mixto_opcion : undefined,
   }))
   .refine((v) => v.route !== "farmaco" || v.medicacion, { path: ["medicacion"], message: "Indica medicamento, dosis y pauta" })
-  .refine((v) => v.route !== "sin_farmaco" || v.fase_dieta, { path: ["fase_dieta"], message: "Indica la fase de la dieta" });
+  .refine((v) => v.route !== "sin_farmaco" || v.fase_dieta, { path: ["fase_dieta"], message: "Indica la fase de la dieta" })
+  .refine((v) => v.fase_dieta !== "mixto" || v.mixto_opcion, { path: ["mixto_opcion"], message: "Elige la opción del método mixto" });
+
+export const cambioFaseSchema = z
+  .object({
+    patient_id: z.uuid(),
+    fase_dieta: z.enum(FASE_KEYS, { error: "Elige la fase" }),
+    productos_dia: num(0, 8, "los productos al día", true),
+    periodo_dias: num(1, 365, "el periodo", true),
+    mixto_opcion: z.enum(["A", "B", "C"]).optional().or(z.literal("").transform(() => undefined)),
+  })
+  .refine((v) => v.fase_dieta !== "mixto" || v.mixto_opcion, { path: ["mixto_opcion"], message: "Elige la opción del método mixto" });
 
 /** Convierte la hora local de Madrid de un <input type="datetime-local"> a ISO UTC. */
 export function madridAIso(local: string): string {
