@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Card, EmptyState, Icon, PageHeader, inputClass } from "@/components/ui";
 import { PacientesTabla } from "@/components/clinic-tables";
-import { getPacientes, PHASE_LABEL } from "@/lib/clinica";
+import { getPacientes, getStaff, PHASE_LABEL } from "@/lib/clinica";
+import { InviteForm } from "./invite-form";
 
 export const metadata: Metadata = { title: "Pacientes" };
 
@@ -20,7 +21,7 @@ export default async function PacientesPage({ searchParams }: PageProps<"/clinic
   const sp = await searchParams;
   const q = typeof sp.q === "string" ? sp.q.trim().slice(0, 80) : "";
   const fase = typeof sp.fase === "string" ? sp.fase : "";
-  const todos = await getPacientes();
+  const [todos, staff] = await Promise.all([getPacientes(), getStaff()]);
   const filas = todos.filter((p) => {
     if (fase === "registro" ? p.phase !== null : fase && p.phase !== fase) return false;
     return !q || norm(`${p.first_name ?? ""} ${p.last_name ?? ""}`).includes(norm(q));
@@ -40,6 +41,8 @@ export default async function PacientesPage({ searchParams }: PageProps<"/clinic
       }>
         Todas las personas a las que tienes acceso, con su fase en el programa.
       </PageHeader>
+
+      {staff.role === "admin" && <InviteForm />}
 
       <div className="flex flex-wrap gap-2">
         {FILTROS.map((f) => (

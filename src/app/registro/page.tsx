@@ -17,7 +17,7 @@ export default function RegistroPage() {
         </div>
         <Card>
           <h1 className="text-xl font-semibold">Crea tu cuenta</h1>
-          <p className="mt-1 text-sm text-ink-soft">Es el primer paso de tu valoración. Solo para mayores de 18 años.</p>
+          <p className="mt-1 text-sm text-ink-soft">Es el primer paso de tu valoración. Sin contraseñas: te enviamos un código.</p>
           {abierto ? (
             <SignupForm />
           ) : (

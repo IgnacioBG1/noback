@@ -14,7 +14,7 @@ export function ConsentStep({ docs }: { docs: ConsentDoc[] }) {
       </p>
       {docs.map((d) => (
         <Card key={d.kind} className="p-5">
-          <details open={d.required}>
+          <details>
             <summary className="cursor-pointer font-semibold">
               {d.title} {d.required ? "" : <span className="font-normal text-ink-soft">(opcional)</span>}
             </summary>
