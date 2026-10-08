@@ -72,6 +72,7 @@ export async function asService(client: Client, sql: string, params?: unknown[])
   await client.query("begin");
   try {
     await client.query(`select set_config('request.jwt.claims', $1, true)`, [JSON.stringify({ role: "service_role" })]);
+    await client.query("set local role service_role"); // con sus privilegios reales, no como superusuario
     const r = await client.query(sql, params);
     await client.query("commit");
     return r;

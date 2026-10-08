@@ -151,7 +151,7 @@ describe("Inmutabilidad y conservación", () => {
     await asService(db.client, `insert into public.access_log (actor_id, patient_id, action) values ($1, $2, 'seed')`, [c.admin, c.patientA]);
     await expect(asService(db.client, `update public.access_log set action = 'x'`)).rejects.toThrow(/inmutable/);
     await expect(asService(db.client, `delete from public.access_log`)).rejects.toThrow(/inmutable/);
-    await expect(asService(db.client, `truncate public.access_log`)).rejects.toThrow(/inmutable/);
+    await expect(db.client.query(`truncate public.access_log`)).rejects.toThrow(/inmutable/); // ni el superusuario
   });
 
   it("los consentimientos no se pueden modificar: revocar es un registro nuevo", async () => {
