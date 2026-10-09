@@ -393,12 +393,12 @@ function Conversacion({ mensajes, fotos, patientId }: { mensajes: { id: string; 
   return (
     <Card>
       <span id="conversacion" />
-      <CardTitle aside={mensajes.length ? `${mensajes.length} últimos mensajes` : undefined}>Conversación con el asistente</CardTitle>
+      <CardTitle aside={mensajes.length ? `${mensajes.length} últimos · el más reciente arriba` : undefined}>Conversación con el asistente</CardTitle>
       {mensajes.length === 0 ? (
         <p className="text-sm text-ink-soft">El paciente todavía no ha hablado con el asistente.</p>
       ) : (
         <ol className="max-h-[28rem] space-y-2 overflow-y-auto pr-1">
-          {mensajes.map((m) => {
+          {[...mensajes].reverse().map((m) => {
             const est = (m.meta as { estimacion?: { proteina_aprox_g: number | null; encaja: string } }).estimacion;
             return (
               <li key={m.id} className={`rounded-lg px-3 py-2 text-sm ${m.sender === "patient" ? "bg-bg" : m.sender === "staff" ? "bg-brand-soft" : "border border-line"}`}>

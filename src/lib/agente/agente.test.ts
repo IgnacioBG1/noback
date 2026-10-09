@@ -15,7 +15,8 @@ describe("Seguridad del asistente", () => {
     }
   });
   it("lo del plan no", () => {
-    for (const t of ["¿Qué verduras puedo comer?", "¿Puedo tomar café?", "¿cuántos productos me tocan hoy?", "Hola"]) expect(pareceClinico(t), t).toBe(false);
+    for (const t of ["¿Qué verduras puedo comer?", "¿Puedo tomar café?", "¿cuántos productos me tocan hoy?", "Hola", "Quiero hablar con mi médico sobre cambiar de fase"]) expect(pareceClinico(t), t).toBe(false);
+    expect(pareceClinico("¿me puedo tomar la medicación con el batido?")).toBe(true);
   });
 });
 

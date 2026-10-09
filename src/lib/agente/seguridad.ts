@@ -11,7 +11,7 @@ const PATRONES_CLINICOS = [
   /fiebre|tiritona|escalofr/,
   /palpitac|taquicard|coraz[oó]n|pecho|tensi[oó]n|presi[oó]n arterial|hipertens|hipotens/,
   /az[uú]car|gluc|hipogluc|diabet|insulina/,
-  /medic|pastill|f[aá]rmaco|dosis|inyecci|pinchaz|pluma|receta|tratamiento|antibi[oó]tic|ibuprofeno|paracetamol/,
+  /medicaci|medicament|pastill|f[aá]rmaco|dosis|inyecci|pinchaz|pluma|receta|antibi[oó]tic|ibuprofeno|paracetamol/,
   /embaraz|lactan|regla|menstru/,
   /alergi|urticaria|hinchaz|picor|ronchas/,
   /me encuentro mal|me siento mal|estoy mal|no me encuentro|enferm|s[ií]ntoma|efecto (secundario|adverso)/,
