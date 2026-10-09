@@ -3,6 +3,9 @@ import Link from "next/link";
 import { Badge, Card, CardTitle, Icon, StatCard, fmtFecha } from "@/components/ui";
 import { fase as faseDe } from "@/content/essential";
 import { ProtocoloFase } from "@/components/protocolo-fase";
+import { CatalogoProductos } from "@/components/catalogo-productos";
+import { FILTROS_ALERGENOS, PRODUCTOS, TIPOS, alergenosDeTexto } from "@/content/productos";
+import { SUPLEMENTOS } from "@/content/essential";
 import { getResumenPaciente } from "@/lib/paciente";
 
 export const metadata: Metadata = { title: "Mi plan" };
@@ -23,6 +26,7 @@ const PILARES = [
 export default async function PlanPage({ searchParams }: PageProps<"/paciente/plan">) {
   const sp = await searchParams;
   const r = await getResumenPaciente();
+  const alergias = alergenosDeTexto(typeof r.intake?.answers.alergias === "string" ? r.intake.answers.alergias : null);
   const fase = r.inscripcion?.phase ?? null;
   const idx = fase ? FASES.findIndex((f) => f.key === fase) : -1;
 
@@ -94,7 +98,38 @@ export default async function PlanPage({ searchParams }: PageProps<"/paciente/pl
               inicio={r.plan.fase_inicio}
               mixtoOpcion={r.plan.mixto_opcion}
               suplementos={r.plan.suplementos ?? []}
+              alergias={alergias}
             />
+          )}
+          {r.plan.route === "farmaco" && (
+            <>
+              {(r.plan.suplementos ?? []).length > 0 && (
+                <Card>
+                  <CardTitle>Tu suplementación</CardTitle>
+                  <ul className="divide-y divide-line">
+                    {(r.plan.suplementos ?? []).map((k) => {
+                      const s = SUPLEMENTOS.find((x) => x.key === k);
+                      return s ? (
+                        <li key={k} className="flex justify-between gap-3 py-2 text-sm">
+                          <span className="font-medium">{s.nombre}</span>
+                          <span className="text-right text-ink-soft">{s.pauta}</span>
+                        </li>
+                      ) : null;
+                    })}
+                  </ul>
+                </Card>
+              )}
+              <Card>
+                <CardTitle aside="para llegar a tu proteína">Si comes poco o tienes náuseas</CardTitle>
+                <CatalogoProductos
+                  productos={PRODUCTOS.filter((p) => p.fases.includes("M"))}
+                  tipos={TIPOS}
+                  filtrosAlergenos={FILTROS_ALERGENOS}
+                  alergiasIniciales={alergias}
+                  aviso="Con el tratamiento es normal tener menos apetito. Para no perder músculo, cada comida debe llevar proteína. Si no te entra una comida completa, un producto Essential te ayuda a llegar a tu objetivo."
+                />
+              </Card>
+            </>
           )}
         </>
       )}

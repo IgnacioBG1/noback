@@ -359,6 +359,16 @@ export const FASES: Fase[] = [
 
 export const FASE_KEYS = FASES.map((f) => f.key) as [FaseKey, ...FaseKey[]];
 export const fase = (k: string | null | undefined) => FASES.find((f) => f.key === k) ?? null;
+
+/** Fase del catálogo de productos (1, 2, 3 o M) que corresponde a cada fase del protocolo. */
+export function faseCatalogo(k: string | null | undefined): "1" | "2" | "3" | "M" | null {
+  if (!k) return null;
+  if (k === "fase_1" || k === "sm_1") return "1";
+  if (k.startsWith("fase_2") || k.startsWith("sm_2")) return "2";
+  if (k.startsWith("fase_3") || k === "mixto") return "3";
+  if (k === "mantenimiento") return "M";
+  return null;
+}
 export const faseNombre = (k: string | null | undefined) => {
   const f = fase(k);
   if (!f) return k ?? "—";
@@ -366,7 +376,7 @@ export const faseNombre = (k: string | null | undefined) => {
 };
 
 /** Suplementación Essential Micro con su posología recomendada (hoja de fase). La pauta la marca el médico. */
-export const SUPLEMENTOS: { key: string; nombre: string; pauta: string }[] = [
+export const SUPLEMENTOS: { key: string; nombre: string; pauta: string; ruta?: "farmaco" }[] = [
   { key: "trimin_capsulas", nombre: "Trimin cápsulas", pauta: "1 o 2 en el desayuno" },
   { key: "trimin_sobres", nombre: "Trimin sobres", pauta: "1 sobre al día, fuera de las comidas" },
   { key: "oligovit", nombre: "Oligovit", pauta: "1 sobre al día" },
@@ -386,5 +396,9 @@ export const SUPLEMENTOS: { key: string; nombre: string; pauta: string }[] = [
   { key: "cla", nombre: "CLA Essential", pauta: "1 cápsula antes de cada comida" },
   { key: "cicatial", nombre: "Cicatial", pauta: "1 sobre al día" },
   { key: "magnesio_plus", nombre: "Magnesio Plus", pauta: "1 cápsula al día" },
+  { key: "sodium", nombre: "Sodium Essential", pauta: "1 a 6 comprimidos al día, ajustando hasta que desaparezcan los síntomas" },
+  // Apoyo proteico cuando se come poco (ruta con tratamiento farmacológico).
+  { key: "vitalpro_glp", nombre: "Vitalpro+ Essential", pauta: "20 g (2 cacitos) en 200 ml de agua o leche semidesnatada, 1 vez al día", ruta: "farmaco" },
+  { key: "vegan_protein", nombre: "Vegan protein Essential", pauta: "30 g (1 cacito) al día en 200-250 ml de agua o bebida vegetal", ruta: "farmaco" },
 ];
 export const SUPLEMENTO_KEYS = SUPLEMENTOS.map((s) => s.key) as [string, ...string[]];

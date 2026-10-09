@@ -1,0 +1,4088 @@
+[
+{
+"ref": "LB06",
+"nombre": "Barrita cookie cream (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 130.0,
+"proteina": 11.6,
+"hidratos": 10.0,
+"grasas": 3.8,
+"fibra": 10.4,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-cookie-cream-5-raciones-LB06"
+},
+{
+"ref": "LB10",
+"nombre": "Barrita de chocolate blanco gama verde (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 35 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 129.0,
+"proteina": 12.7,
+"hidratos": 4.0,
+"grasas": 5.9,
+"fibra": 6.4,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"cacahuete"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-chocolate-blanco-gama-verde-5-raciones-LB10"
+},
+{
+"ref": "LB16",
+"nombre": "Barrita de cookies (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 45 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 156.8,
+"proteina": 15.57,
+"hidratos": 4.32,
+"grasas": 2.35,
+"fibra": 13.81,
+"alergenos": [
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-cookies-5-raciones-LB16"
+},
+{
+"ref": "LB09",
+"nombre": "Barrita gama verde caramelo (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 130.0,
+"proteina": 15.2,
+"hidratos": 3.6,
+"grasas": 4.1,
+"fibra": 9.8,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-caramelo-5-raciones-LB09"
+},
+{
+"ref": "LB08",
+"nombre": "Barrita gama verde manzana (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 39 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 136.0,
+"proteina": 15.4,
+"hidratos": 4.0,
+"grasas": 4.4,
+"fibra": 10.1,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-manzana-5-raciones-LB08"
+},
+{
+"ref": "LB19",
+"nombre": "Barrita panna cotta red berries",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 43 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 143.0,
+"proteina": 15.0,
+"hidratos": 3.6,
+"grasas": 5.3,
+"fibra": 12.0,
+"alergenos": [
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-panna-cotta-red-berries-LB19"
+},
+{
+"ref": "10LB09",
+"nombre": "Barritas de caramelo (10 unidades)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "10 barritas de 25 g",
+"precio": 17.5,
+"raciones": 10,
+"eurRacion": 1.75,
+"kcal": 83.8,
+"proteina": 9.8,
+"hidratos": 2.5,
+"grasas": 2.5,
+"fibra": 6.4,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-caramelo-10-unidades-10LB09"
+},
+{
+"ref": "10LB10",
+"nombre": "Barritas de chocolate blanco (10 unidades)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "10 barritas de 25 g",
+"precio": 15.4,
+"raciones": 10,
+"eurRacion": 1.54,
+"kcal": 92.0,
+"proteina": 9.1,
+"hidratos": 2.9,
+"grasas": 4.2,
+"fibra": 4.6,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"cacahuete"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-chocolate-blanco-10-unidades-10LB10"
+},
+{
+"ref": "10LB08",
+"nombre": "Barritas de manzana (10 unidades)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "10 barritas de 25 g",
+"precio": 17.5,
+"raciones": 10,
+"eurRacion": 1.75,
+"kcal": 85.3,
+"proteina": 9.6,
+"hidratos": 2.5,
+"grasas": 2.8,
+"fibra": 6.3,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-manzana-10-unidades-10LB08"
+},
+{
+"ref": "LB18",
+"nombre": "Barritas de turrón (5 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "5 barritas de 35 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 104.0,
+"proteina": 11.2,
+"hidratos": 4.0,
+"grasas": 3.1,
+"fibra": 9.6,
+"alergenos": [
+"leche",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-turron-5-raciones-LB18"
+},
+{
+"ref": "30LB09",
+"nombre": "Caja de 30 barritas de caramelo (30 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "30 barritas de 40 g",
+"precio": 86.0,
+"raciones": 30,
+"eurRacion": 2.87,
+"kcal": 134.0,
+"proteina": 15.7,
+"hidratos": 4.0,
+"grasas": 4.0,
+"fibra": 10.2,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-caramelo-30-raciones-30LB09"
+},
+{
+"ref": "30LB10",
+"nombre": "Caja de 30 barritas de chocolate blanco (30 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "30 barritas de 35 g",
+"precio": 80.0,
+"raciones": 30,
+"eurRacion": 2.67,
+"kcal": 131.0,
+"proteina": 14.1,
+"hidratos": 4.6,
+"grasas": 4.7,
+"fibra": 9.5,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"cacahuete"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-chocolate-blanco-30-raciones-30LB10"
+},
+{
+"ref": "30LB08",
+"nombre": "Caja de 30 barritas de manzana (30 raciones)",
+"gama": "verde",
+"tipo": "Barritas",
+"formato": "30 barritas de 39 g",
+"precio": 86.0,
+"raciones": 30,
+"eurRacion": 2.87,
+"kcal": 136.0,
+"proteina": 15.4,
+"hidratos": 4.0,
+"grasas": 4.4,
+"fibra": 10.1,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-manzana-30-raciones-30LB08"
+},
+{
+"ref": "DPM01",
+"nombre": "Batido capuchino formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Proteinas",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 83.0,
+"proteina": 18.0,
+"hidratos": 1.5,
+"grasas": 0.5,
+"fibra": 0.3,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-capuchino-formato-economico-16-raciones-DPM01"
+},
+{
+"ref": "LE27",
+"nombre": "Batido de café frape (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Proteinas",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 90.0,
+"proteina": 18.0,
+"hidratos": 2.7,
+"grasas": 0.5,
+"fibra": 0.2,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-cafe-frape-16-raciones-LE27"
+},
+{
+"ref": "DM41",
+"nombre": "Batido de chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "5 raciones de 24 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 83.3,
+"proteina": 17.9,
+"hidratos": 1.6,
+"grasas": 0.6,
+"fibra": 0.8,
+"alergenos": [
+"leche"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-5-raciones-DM41"
+},
+{
+"ref": "LE09",
+"nombre": "Batido de chocolate belga formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Proteinas",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 92.0,
+"proteina": 15.4,
+"hidratos": 2.8,
+"grasas": 1.6,
+"fibra": 2.3,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-belga-formato-economico-16-raciones-LE09"
+},
+{
+"ref": "LE16",
+"nombre": "Batido de chocolate blanco formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "16 raciones de 25 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 90.0,
+"proteina": 18.0,
+"hidratos": 3.4,
+"grasas": 0.5,
+"fibra": 0.1,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-16-raciones-LE16"
+},
+{
+"ref": "5LE16",
+"nombre": "Batido de chocolate blanco formato económico 500 g (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Bote de 500 g",
+"precio": 38.5,
+"raciones": 20,
+"eurRacion": 1.93,
+"kcal": 90.0,
+"proteina": 18.0,
+"hidratos": 3.4,
+"grasas": 0.5,
+"fibra": 0.1,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-500-g-20-raciones-5LE16"
+},
+{
+"ref": "5LE05",
+"nombre": "Batido de chocolate con leche formato económico 500G (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "20 raciones de 25 g",
+"precio": 38.5,
+"raciones": 20,
+"eurRacion": 1.93,
+"kcal": 92.0,
+"proteina": 16.9,
+"hidratos": 3.8,
+"grasas": 0.8,
+"fibra": 0.69,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-con-leche-formato-economico-500g-20-raciones-5LE05"
+},
+{
+"ref": "5LE06",
+"nombre": "Batido de chocolate intenso formato económico 500G (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "20 raciones de 25 g",
+"precio": 38.5,
+"raciones": 20,
+"eurRacion": 1.93,
+"kcal": 88.0,
+"proteina": 16.0,
+"hidratos": 2.4,
+"grasas": 1.2,
+"fibra": 1.8,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-intenso-formato-economico-500g-20-raciones-5LE06"
+},
+{
+"ref": "LE19",
+"nombre": "Batido de fresa formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "16 raciones de 25 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 91.0,
+"proteina": 18.7,
+"hidratos": 2.8,
+"grasas": 0.4,
+"fibra": 0.3,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-formato-economico-16-raciones-LE19"
+},
+{
+"ref": "DM62",
+"nombre": "Batido de fresa y plátano (5 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "5 raciones de 24 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 88.7,
+"proteina": 17.8,
+"hidratos": 2.8,
+"grasas": 0.3,
+"fibra": 0.8,
+"alergenos": [
+"leche"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-y-platano-5-raciones-DM62"
+},
+{
+"ref": "DL33",
+"nombre": "Batido preparado de café moka (1 ración)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Brick de 250 ml",
+"precio": 4.2,
+"raciones": 1,
+"eurRacion": 4.2,
+"kcal": 100.0,
+"proteina": 15.0,
+"hidratos": 2.9,
+"grasas": 2.9,
+"fibra": 1.2,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-preparado-de-cafe-moka-1-racion-DL33"
+},
+{
+"ref": "5LE28",
+"nombre": "Batido sabor \"cookies & cream\" formato económico 400G (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Con 5g de COLÁGENO HIDROLIZADO por ración.",
+"precio": 38.5,
+"raciones": 20,
+"eurRacion": 1.93,
+"kcal": 79.0,
+"proteina": 16.5,
+"hidratos": 1.1,
+"grasas": 1.0,
+"fibra": null,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-cookies-cream-formato-economico-400g-20-raciones-5LE28"
+},
+{
+"ref": "5LE29",
+"nombre": "Batido sabor chocolate con colágeno formato económico (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Con 5 g de COLÁGENO HIDROLIZADO por ración.",
+"precio": 38.5,
+"raciones": 20,
+"eurRacion": 1.93,
+"kcal": 79.0,
+"proteina": 16.0,
+"hidratos": 1.3,
+"grasas": 1.1,
+"fibra": null,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-chocolate-con-colageno-formato-economico-20-raciones-5LE29"
+},
+{
+"ref": "LE07",
+"nombre": "Batido sabor fresa-galleta formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "16 raciones de 25 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 92.0,
+"proteina": 18.8,
+"hidratos": 2.9,
+"grasas": 0.5,
+"fibra": 0.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-fresa-galleta-formato-economico-16-raciones-LE07"
+},
+{
+"ref": "DM68",
+"nombre": "Batido sabor mango pasión (5 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "5 sobres de 23,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 81.8,
+"proteina": 17.8,
+"hidratos": 2.7,
+"grasas": 0.4,
+"fibra": 0.6,
+"alergenos": [
+"leche"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-mango-pasion-5-raciones-DM68"
+},
+{
+"ref": "LE13",
+"nombre": "Batido sabor vainilla-canela formato económico (16 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "16 raciones e 25 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 90.0,
+"proteina": 18.8,
+"hidratos": 2.3,
+"grasas": 0.5,
+"fibra": 0.4,
+"alergenos": [
+"leche",
+"lactosa",
+"pescado"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-vainilla-canela-formato-economico-16-raciones-LE13"
+},
+{
+"ref": "DL13",
+"nombre": "Brick de chocolate (1 ración)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "1 brick de 250 ml",
+"precio": 4.2,
+"raciones": 1,
+"eurRacion": 4.2,
+"kcal": 100.0,
+"proteina": 15.0,
+"hidratos": 1.5,
+"grasas": 3.4,
+"fibra": 1.5,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-chocolate-1-racion-DL13"
+},
+{
+"ref": "DL32",
+"nombre": "Brick de vainilla (1 ración)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Brick de 250 ml",
+"precio": 4.2,
+"raciones": 1,
+"eurRacion": 4.2,
+"kcal": 95.0,
+"proteina": 15.0,
+"hidratos": 1.5,
+"grasas": 3.0,
+"fibra": 0.9,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-vainilla-1-racion-DL32"
+},
+{
+"ref": "LE30",
+"nombre": "Proteína de sioja neutra (20 raciones)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "20 raciones de 18 g",
+"precio": 20.0,
+"raciones": 20,
+"eurRacion": 1.0,
+"kcal": 65.0,
+"proteina": 16.0,
+"hidratos": 0.4,
+"grasas": 2.2,
+"fibra": 0.0,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/proteina-de-sioja-neutra-20-raciones-LE30"
+},
+{
+"ref": "DL08",
+"nombre": "Smoothie de fresa (1 ración)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "1 botellín de 200ml.",
+"precio": 4.2,
+"raciones": 1,
+"eurRacion": 4.2,
+"kcal": 101.0,
+"proteina": 15.0,
+"hidratos": 1.87,
+"grasas": 3.2,
+"fibra": 2.2,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-fresa-1-racion-DL08"
+},
+{
+"ref": "DL07",
+"nombre": "Smoothie de plátano (1 ración)",
+"gama": "verde",
+"tipo": "Batidos y bebidas",
+"formato": "Proteinas",
+"precio": 4.2,
+"raciones": 1,
+"eurRacion": 4.2,
+"kcal": 105.0,
+"proteina": 15.0,
+"hidratos": 2.7,
+"grasas": 3.2,
+"fibra": 2.64,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-platano-1-racion-DL07"
+},
+{
+"ref": "LA76",
+"nombre": "Base de pizza italiana (2 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "2 raciones de 50 g",
+"precio": 8.5,
+"raciones": 2,
+"eurRacion": 4.25,
+"kcal": 156.0,
+"proteina": 13.0,
+"hidratos": 4.0,
+"grasas": 7.5,
+"fibra": 11.0,
+"alergenos": [
+"gluten"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/base-de-pizza-italiana-2-raciones-LA76"
+},
+{
+"ref": "DNS11",
+"nombre": "Consomé sabor pollo (16 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "16 raciones de 27 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 91.0,
+"proteina": 18.0,
+"hidratos": 3.0,
+"grasas": 0.6,
+"fibra": 0.8,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"mostaza",
+"apio"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/consome-sabor-pollo-16-raciones-DNS11"
+},
+{
+"ref": "DL90",
+"nombre": "Crackers de pizza (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 unidades de 40 g",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 173.4,
+"proteina": 18.3,
+"hidratos": 3.5,
+"grasas": 8.0,
+"fibra": 6.8,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crackers-de-pizza-5-raciones-DL90"
+},
+{
+"ref": "DS75",
+"nombre": "Crema de 8 vegetales con picatostes (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 25 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 91.0,
+"proteina": 17.0,
+"hidratos": 3.6,
+"grasas": 1.1,
+"fibra": 0.4,
+"alergenos": [
+"gluten",
+"soja",
+"apio"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-8-vegetales-con-picatostes-5-raciones-DS75"
+},
+{
+"ref": "DS42",
+"nombre": "Crema de calabaza (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 24 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 82.9,
+"proteina": 17.3,
+"hidratos": 0.6,
+"grasas": 1.6,
+"fibra": 0.5,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-calabaza-5-raciones-DS42"
+},
+{
+"ref": "DS02",
+"nombre": "Crema de champiñones (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 25,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 99.5,
+"proteina": 19.4,
+"hidratos": 3.2,
+"grasas": 1.0,
+"fibra": 0.5,
+"alergenos": [
+"leche"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-champinones-5-raciones-DS02"
+},
+{
+"ref": "DS72",
+"nombre": "Crema de hortalizas verdes con crutones (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 25 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 90.0,
+"proteina": 17.0,
+"hidratos": 3.1,
+"grasas": 1.0,
+"fibra": 0.9,
+"alergenos": [
+"gluten",
+"soja",
+"apio"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-hortalizas-verdes-con-crutones-5-raciones-DS72"
+},
+{
+"ref": "DS03",
+"nombre": "Crema de puerros (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 24,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 92.8,
+"proteina": 18.2,
+"hidratos": 2.5,
+"grasas": 1.0,
+"fibra": 0.8,
+"alergenos": [
+"leche"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-puerros-5-raciones-DS03"
+},
+{
+"ref": "DNS08",
+"nombre": "Crema de verduras del huerto (16 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "Caja con 16 sobres de 26 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 100.6,
+"proteina": 18.5,
+"hidratos": 2.9,
+"grasas": 1.2,
+"fibra": null,
+"alergenos": [
+"leche",
+"lactosa",
+"apio",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-verduras-del-huerto-16-raciones-DNS08"
+},
+{
+"ref": "DS97",
+"nombre": "Crema sabor pollo con picatostes (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 25 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 86.0,
+"proteina": 17.0,
+"hidratos": 2.4,
+"grasas": 0.7,
+"fibra": 0.5,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-sabor-pollo-con-picatostes-5-raciones-DS97"
+},
+{
+"ref": "DM71",
+"nombre": "Crepe natural (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 25 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 90.0,
+"proteina": 18.0,
+"hidratos": 3.6,
+"grasas": 0.5,
+"fibra": 0.3,
+"alergenos": [
+"gluten",
+"leche",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crepe-natural-5-raciones-DM71"
+},
+{
+"ref": "LA09",
+"nombre": "Fuet (5 raciones),",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 blíster de 2 unidades (40 g).",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 158.0,
+"proteina": 14.4,
+"hidratos": 3.3,
+"grasas": 9.6,
+"fibra": null,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fuet-5-raciones-LA09"
+},
+{
+"ref": "DS53",
+"nombre": "Fusilli (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 0.2,
+"proteina": 18.0,
+"hidratos": 4.3,
+"grasas": 0.9,
+"fibra": 2.4,
+"alergenos": [
+"gluten",
+"leche",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fusilli-5-raciones-DS53"
+},
+{
+"ref": "LG06",
+"nombre": "Galletas de chocolate con crema de vainilla (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "10 galletas de 18 g",
+"precio": 17.0,
+"raciones": 5,
+"eurRacion": 3.4,
+"kcal": 74.0,
+"proteina": 6.0,
+"hidratos": 1.0,
+"grasas": 4.1,
+"fibra": 4.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-de-chocolate-con-crema-de-vainilla-5-raciones-LG06"
+},
+{
+"ref": "LA51",
+"nombre": "Mousse de atún, anchoas y pimientos (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 23 g",
+"precio": 5.0,
+"raciones": 5,
+"eurRacion": 1.0,
+"kcal": 34.3,
+"proteina": 3.0,
+"hidratos": 0.4,
+"grasas": 2.2,
+"fibra": 0.1,
+"alergenos": [
+"leche",
+"pescado",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mousse-de-atun-anchoas-y-pimientos-5-raciones-LA51"
+},
+{
+"ref": "DS52",
+"nombre": "Nidos de pasta (2 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "2 raciones de 50 g",
+"precio": 5.5,
+"raciones": 2,
+"eurRacion": 2.75,
+"kcal": 134.0,
+"proteina": 15.0,
+"hidratos": 2.88,
+"grasas": 0.5,
+"fibra": 25.3,
+"alergenos": [
+"gluten"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nidos-de-pasta-2-raciones-DS52"
+},
+{
+"ref": "LA79",
+"nombre": "Noodles de konjac",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "3 raciones de 200 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 29.0,
+"proteina": 0.66,
+"hidratos": 3.2,
+"grasas": 0.0,
+"fibra": 6.8,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/noodles-de-konjac-LA79"
+},
+{
+"ref": "DS31",
+"nombre": "Nuggets de pollo (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 27,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 104.0,
+"proteina": 17.2,
+"hidratos": 4.0,
+"grasas": 2.2,
+"fibra": 0.5,
+"alergenos": [
+"gluten",
+"leche",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nuggets-de-pollo-5-raciones-DS31"
+},
+{
+"ref": "DS43",
+"nombre": "Pastel de bacon (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 27 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 96.0,
+"proteina": 17.6,
+"hidratos": 2.8,
+"grasas": 1.6,
+"fibra": 1.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pastel-de-bacon-5-raciones-DS43"
+},
+{
+"ref": "LA08",
+"nombre": "Paté (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 tarrinas de 25 g",
+"precio": 7.5,
+"raciones": 5,
+"eurRacion": 1.5,
+"kcal": 32.25,
+"proteina": 4.45,
+"hidratos": 1.12,
+"grasas": 1.09,
+"fibra": 1.32,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-5-raciones-LA08"
+},
+{
+"ref": "LA50",
+"nombre": "Paté de atún (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 tarrinas de 25 g",
+"precio": 5.5,
+"raciones": 5,
+"eurRacion": 1.1,
+"kcal": 74.55,
+"proteina": 2.26,
+"hidratos": 1.28,
+"grasas": 6.71,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa",
+"pescado"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-de-atun-5-raciones-LA50"
+},
+{
+"ref": "LA41",
+"nombre": "Queso parmesano (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 unidades de 20 g",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 99.6,
+"proteina": 9.6,
+"hidratos": 0.0,
+"grasas": 6.8,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/queso-parmesano-5-raciones-LA41"
+},
+{
+"ref": "LA01",
+"nombre": "Salchichas Frankfurt (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 blísters de 100 g",
+"precio": 16.95,
+"raciones": 5,
+"eurRacion": 3.39,
+"kcal": 96.0,
+"proteina": 15.08,
+"hidratos": 2.8,
+"grasas": 1.9,
+"fibra": 0.8,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salchichas-frankfurt-5-raciones-LA01"
+},
+{
+"ref": "LA23",
+"nombre": "Salmón en lata (4 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "4 raciones de 65 g",
+"precio": 15.5,
+"raciones": 4,
+"eurRacion": 3.88,
+"kcal": 144.0,
+"proteina": 14.4,
+"hidratos": 0.0,
+"grasas": 9.6,
+"fibra": 0.0,
+"alergenos": [
+"pescado"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salmon-en-lata-4-raciones-LA23"
+},
+{
+"ref": "LA06",
+"nombre": "Salsa shirataki boloñesa (100 g)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "Proteinas",
+"precio": 5.0,
+"raciones": null,
+"eurRacion": null,
+"kcal": 103.0,
+"proteina": 16.0,
+"hidratos": 2.3,
+"grasas": 3.3,
+"fibra": 0.44,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salsa-shirataki-bolonesa-100-g-LA06"
+},
+{
+"ref": "LA22",
+"nombre": "Snack de salchichón (1 ración)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "Proteinas",
+"precio": 4.0,
+"raciones": 1,
+"eurRacion": 4.0,
+"kcal": 79.0,
+"proteina": 11.0,
+"hidratos": 0.8,
+"grasas": 3.7,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-salchichon-1-racion-LA22"
+},
+{
+"ref": "DS55",
+"nombre": "Sopa china (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 29 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 90.8,
+"proteina": 18.0,
+"hidratos": 3.2,
+"grasas": 0.4,
+"fibra": 1.0,
+"alergenos": [
+"gluten",
+"leche",
+"huevo",
+"soja",
+"apio"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-china-5-raciones-DS55"
+},
+{
+"ref": "DS06",
+"nombre": "Sopa minestrone (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 25,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 90.0,
+"proteina": 18.0,
+"hidratos": 2.0,
+"grasas": 1.0,
+"fibra": 1.0,
+"alergenos": [
+"gluten",
+"leche",
+"apio"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-minestrone-5-raciones-DS06"
+},
+{
+"ref": "LA20",
+"nombre": "Sticks de chorizo (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 blíster de 2 unidades (40 g).",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 132.0,
+"proteina": 16.0,
+"hidratos": 3.5,
+"grasas": 6.2,
+"fibra": null,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chorizo-5-raciones-LA20"
+},
+{
+"ref": "DNS17",
+"nombre": "Tortilla de bacon y queso",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "16 raciones de 24,5 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 86.1,
+"proteina": 17.6,
+"hidratos": 1.4,
+"grasas": 1.1,
+"fibra": 0.1,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-bacon-y-queso-DNS17"
+},
+{
+"ref": "DS17",
+"nombre": "Tortilla de jamón y queso (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 24,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 86.1,
+"proteina": 17.6,
+"hidratos": 1.4,
+"grasas": 1.1,
+"fibra": 0.1,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-jamon-y-queso-5-raciones-DS17"
+},
+{
+"ref": "DS50",
+"nombre": "Tortilla de queso y patata (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 sobres de 27 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 101.8,
+"proteina": 17.7,
+"hidratos": 4.0,
+"grasas": 1.6,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-queso-y-patata-5-raciones-DS50"
+},
+{
+"ref": "LA63",
+"nombre": "Tortilla de trigo (6 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "6 tortillas de 40 g.",
+"precio": 9.5,
+"raciones": 6,
+"eurRacion": 1.58,
+"kcal": 123.0,
+"proteina": 8.8,
+"hidratos": 4.4,
+"grasas": 5.5,
+"fibra": 10.4,
+"alergenos": [
+"gluten"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-trigo-6-raciones-LA63"
+},
+{
+"ref": "LA61",
+"nombre": "Untable de queso curado (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 tarrinas de 23 g",
+"precio": 6.5,
+"raciones": 5,
+"eurRacion": 1.3,
+"kcal": 65.3,
+"proteina": 3.11,
+"hidratos": null,
+"grasas": 5.18,
+"fibra": null,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-curado-5-raciones-LA61"
+},
+{
+"ref": "LA60",
+"nombre": "Untable de queso suave (5 raciones))",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 tarrinas de 23 g",
+"precio": 6.0,
+"raciones": 5,
+"eurRacion": 1.2,
+"kcal": 57.7,
+"proteina": 1.45,
+"hidratos": 0.53,
+"grasas": 5.52,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-5-raciones-LA60"
+},
+{
+"ref": "LA64",
+"nombre": "Untable de queso suave de finas hierbas (5 raciones)",
+"gama": "verde",
+"tipo": "Comidas saladas",
+"formato": "5 tarrinas de 23 g",
+"precio": 6.75,
+"raciones": 5,
+"eurRacion": 1.35,
+"kcal": 57.7,
+"proteina": 1.45,
+"hidratos": 0.53,
+"grasas": 5.52,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-de-finas-hierbas-5-raciones-LA64"
+},
+{
+"ref": "LA67",
+"nombre": "Bollito con pepitas de chocolate (3 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "3 raciones de 50g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 150.0,
+"proteina": 12.5,
+"hidratos": 4.0,
+"grasas": 7.5,
+"fibra": 8.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bollito-con-pepitas-de-chocolate-3-raciones-LA67"
+},
+{
+"ref": "LA69",
+"nombre": "Brownie de chocolate con avellanas (3 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "3 raciones de 43 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 176.0,
+"proteina": 15.6,
+"hidratos": 3.7,
+"grasas": 10.2,
+"fibra": 7.0,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brownie-de-chocolate-con-avellanas-3-raciones-LA69"
+},
+{
+"ref": "30LG15",
+"nombre": "Caja de 30 obleas de chocolate recubiertas (30 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "30 obleas de 40 g",
+"precio": 86.0,
+"raciones": 30,
+"eurRacion": 2.87,
+"kcal": 192.0,
+"proteina": 15.0,
+"hidratos": 4.8,
+"grasas": 11.2,
+"fibra": 5.5,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-chocolate-recubiertas-30-raciones-30LG15"
+},
+{
+"ref": "30LG11",
+"nombre": "Caja de 30 obleas de jamón y queso (30 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "30 obleas de 40 g",
+"precio": 80.0,
+"raciones": 30,
+"eurRacion": 2.67,
+"kcal": 183.0,
+"proteina": 16.0,
+"hidratos": 3.43,
+"grasas": 9.77,
+"fibra": 8.8,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-jamon-y-queso-30-raciones-30LG11"
+},
+{
+"ref": "30LG16",
+"nombre": "Caja de 30 obleas de vainilla recubiertas de chocolate (30 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "30 obleas de 40 g",
+"precio": 86.0,
+"raciones": 30,
+"eurRacion": 2.87,
+"kcal": 192.0,
+"proteina": 14.8,
+"hidratos": 4.8,
+"grasas": 11.2,
+"fibra": 6.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-vainilla-recubiertas-de-chocolate-30-raciones-30LG16"
+},
+{
+"ref": "DL27",
+"nombre": "Crema untable de avellanas con chocolate",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "20 raciones de 12 g",
+"precio": 12.95,
+"raciones": 20,
+"eurRacion": 0.65,
+"kcal": 39.0,
+"proteina": 0.5,
+"hidratos": 1.8,
+"grasas": 3.06,
+"fibra": 4.3,
+"alergenos": [
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-untable-de-avellanas-con-chocolate-DL27"
+},
+{
+"ref": "LA75",
+"nombre": "Crocanti Praliné (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "10 bolitas de 15 g",
+"precio": 19.5,
+"raciones": 5,
+"eurRacion": 3.9,
+"kcal": 170.0,
+"proteina": 6.4,
+"hidratos": 3.6,
+"grasas": 13.2,
+"fibra": 4.8,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crocanti-praline-5-raciones-LA75"
+},
+{
+"ref": "LA66",
+"nombre": "Crock de chocolate y avellana (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 raciones de 30 g",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 150.0,
+"proteina": 9.6,
+"hidratos": 4.5,
+"grasas": 10.0,
+"fibra": 3.1,
+"alergenos": [
+"leche",
+"lactosa",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crock-de-chocolate-y-avellana-5-raciones-LA66"
+},
+{
+"ref": "DL31",
+"nombre": "Mermelada de albaricoque (10 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "1 tarro de 330 g",
+"precio": 4.5,
+"raciones": 10,
+"eurRacion": 0.45,
+"kcal": 4.8,
+"proteina": 0.0,
+"hidratos": 1.3,
+"grasas": 0.03,
+"fibra": 0.11,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-albaricoque-10-raciones-DL31"
+},
+{
+"ref": "DL24",
+"nombre": "Mermelada de fresa",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "1 tarro de 330 g",
+"precio": 4.5,
+"raciones": null,
+"eurRacion": null,
+"kcal": 6.1,
+"proteina": 0.0,
+"hidratos": 1.5,
+"grasas": 0.0,
+"fibra": 0.0,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-fresa-DL24"
+},
+{
+"ref": "LG11",
+"nombre": "Oblea de jamón y queso Essential (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 obleas de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 183.0,
+"proteina": 16.0,
+"hidratos": 3.43,
+"grasas": 9.77,
+"fibra": 8.8,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/oblea-de-jamon-y-queso-essential-5-raciones-LG11"
+},
+{
+"ref": "LG15",
+"nombre": "Obleas de chocolate recubiertas gama verde (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 obleas de 40 g",
+"precio": 16.0,
+"raciones": 5,
+"eurRacion": 3.2,
+"kcal": 192.0,
+"proteina": 15.2,
+"hidratos": 4.8,
+"grasas": 11.2,
+"fibra": 5.5,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-chocolate-recubiertas-gama-verde-5-raciones-LG15"
+},
+{
+"ref": "LG16",
+"nombre": "Obleas de vainilla recubiertas gama verde (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 obleas de 40 g",
+"precio": 16.0,
+"raciones": 5,
+"eurRacion": 3.2,
+"kcal": 192.0,
+"proteina": 14.8,
+"hidratos": 4.8,
+"grasas": 11.2,
+"fibra": 6.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-vainilla-recubiertas-gama-verde-5-raciones-LG16"
+},
+{
+"ref": "LG19",
+"nombre": "Obleas sabor avellana (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 raciones de 45 g",
+"precio": 16.0,
+"raciones": 5,
+"eurRacion": 3.2,
+"kcal": 216.6,
+"proteina": 18.4,
+"hidratos": 4.1,
+"grasas": 12.2,
+"fibra": 0.8,
+"alergenos": [
+"gluten",
+"leche",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-avellana-5-raciones-LG19"
+},
+{
+"ref": "LG18",
+"nombre": "Obleas sabor coco (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "5 obleas de 38 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 201.0,
+"proteina": 16.11,
+"hidratos": 4.87,
+"grasas": 12.73,
+"fibra": 1.33,
+"alergenos": [
+"gluten",
+"leche",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-coco-5-raciones-LG18"
+},
+{
+"ref": "SA05",
+"nombre": "Sabor limón (1 ración)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "Contiene: 6,5 g/STICK.",
+"precio": 0.8,
+"raciones": 1,
+"eurRacion": 0.8,
+"kcal": 6.63,
+"proteina": 0.1,
+"hidratos": 1.65,
+"grasas": 3.0,
+"fibra": 0.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja",
+"pescado",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-limon-1-racion-SA05"
+},
+{
+"ref": "SA04",
+"nombre": "Sabor naranja (1 ración)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "1 stick de 6,5 g",
+"precio": 0.8,
+"raciones": 1,
+"eurRacion": 0.8,
+"kcal": 4.84,
+"proteina": 1.0,
+"hidratos": 0.21,
+"grasas": 0.0,
+"fibra": 0.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja",
+"pescado",
+"sulfitos",
+"cacahuete"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-naranja-1-racion-SA04"
+},
+{
+"ref": "DM78",
+"nombre": "Tableta de chocolate con leche (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "10 tabletas de 15 g",
+"precio": 18.0,
+"raciones": 5,
+"eurRacion": 3.6,
+"kcal": 76.0,
+"proteina": 4.8,
+"hidratos": 0.8,
+"grasas": 5.2,
+"fibra": 3.3,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-con-leche-5-raciones-DM78"
+},
+{
+"ref": "DM77",
+"nombre": "Tableta de chocolate negro crujiente (5 raciones)",
+"gama": "verde",
+"tipo": "Obleas y dulces",
+"formato": "10 tabletas de 15 g",
+"precio": 18.0,
+"raciones": 5,
+"eurRacion": 3.6,
+"kcal": 67.0,
+"proteina": 5.0,
+"hidratos": 0.4,
+"grasas": 4.3,
+"fibra": 4.3,
+"alergenos": [
+"leche",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-negro-crujiente-5-raciones-DM77"
+},
+{
+"ref": "LS18",
+"nombre": "Biscotes con semillas (8 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "8 raciones de 25 g",
+"precio": 16.95,
+"raciones": 8,
+"eurRacion": 2.12,
+"kcal": 123.0,
+"proteina": 8.5,
+"hidratos": 3.2,
+"grasas": 7.6,
+"fibra": 3.8,
+"alergenos": [
+"gluten",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/biscotes-con-semillas-8-raciones-LS18"
+},
+{
+"ref": "LA44",
+"nombre": "Croissant (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 unidades de 50 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 190.0,
+"proteina": 13.0,
+"hidratos": 4.5,
+"grasas": 12.0,
+"fibra": 6.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-3-raciones-LA44"
+},
+{
+"ref": "LA52",
+"nombre": "Croissant relleno de chocolate (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 unidades de 50 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 189.0,
+"proteina": 12.0,
+"hidratos": 5.0,
+"grasas": 13.0,
+"fibra": 6.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-relleno-de-chocolate-3-raciones-LA52"
+},
+{
+"ref": "LA59",
+"nombre": "Croissant salado (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 unidades de 50g.",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 188.0,
+"proteina": 13.0,
+"hidratos": 4.5,
+"grasas": 12.0,
+"fibra": 7.0,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-salado-3-raciones-LA59"
+},
+{
+"ref": "LG26",
+"nombre": "Galleta alargada de vainilla con chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 raciones de 43 g",
+"precio": 18.0,
+"raciones": 5,
+"eurRacion": 3.6,
+"kcal": 180.0,
+"proteina": 12.9,
+"hidratos": 3.44,
+"grasas": 9.46,
+"fibra": 9.46,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galleta-alargada-de-vainilla-con-chocolate-5-raciones-LG26"
+},
+{
+"ref": "LG22",
+"nombre": "Galletas recubiertas de chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 paquetes de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 138.5,
+"proteina": 12.1,
+"hidratos": 4.8,
+"grasas": 6.8,
+"fibra": 4.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-5-raciones-LG22"
+},
+{
+"ref": "LG24",
+"nombre": "Galletas recubiertas de chocolate con leche (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 paquetes de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 133.0,
+"proteina": 12.1,
+"hidratos": 4.8,
+"grasas": 6.8,
+"fibra": 4.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-con-leche-5-raciones-LG24"
+},
+{
+"ref": "LG23",
+"nombre": "Galletas sabor naranja recubiertas de chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 paquetes de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 131.0,
+"proteina": 12.1,
+"hidratos": 4.1,
+"grasas": 6.8,
+"fibra": 4.8,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-sabor-naranja-recubiertas-de-chocolate-5-raciones-LG23"
+},
+{
+"ref": "DB27",
+"nombre": "Mini galletas vainilla-limón (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 raciones de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 112.0,
+"proteina": 11.0,
+"hidratos": 3.0,
+"grasas": 5.8,
+"fibra": 3.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mini-galletas-vainilla-limon-5-raciones-DB27"
+},
+{
+"ref": "DB26",
+"nombre": "Minigalletas de naranja (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 raciones de 30 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 122.0,
+"proteina": 11.0,
+"hidratos": 3.0,
+"grasas": 5.8,
+"fibra": 3.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/minigalletas-de-naranja-5-raciones-DB26"
+},
+{
+"ref": "LG28",
+"nombre": "Muffin de frutos rojos (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 raciones de 50 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 190.0,
+"proteina": 12.0,
+"hidratos": 4.0,
+"grasas": 11.0,
+"fibra": 8.5,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/muffin-de-frutos-rojos-3-raciones-LG28"
+},
+{
+"ref": "LG25",
+"nombre": "Obleas de cookie cream (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 raciones de 42 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 201.0,
+"proteina": 17.0,
+"hidratos": 4.4,
+"grasas": 11.1,
+"fibra": 6.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-cookie-cream-5-raciones-LG25"
+},
+{
+"ref": "LA68",
+"nombre": "Palmeras (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 raciones de 50 g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 193.0,
+"proteina": 10.3,
+"hidratos": 4.9,
+"grasas": 13.1,
+"fibra": null,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/palmeras-3-raciones-LA68"
+},
+{
+"ref": "LS13",
+"nombre": "Pan blanco (7 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "1 paquete de 7 raciones de 40 g",
+"precio": 12.0,
+"raciones": 7,
+"eurRacion": 1.71,
+"kcal": 89.2,
+"proteina": 10.8,
+"hidratos": 4.3,
+"grasas": 1.92,
+"fibra": 5.6,
+"alergenos": [
+"gluten",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-blanco-7-raciones-LS13"
+},
+{
+"ref": "LS19",
+"nombre": "Pan de molde (8 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "1 paquete con 8 raciones de 45,6 g",
+"precio": 17.5,
+"raciones": 8,
+"eurRacion": 2.19,
+"kcal": 100.8,
+"proteina": 13.54,
+"hidratos": 4.1,
+"grasas": 1.87,
+"fibra": 4.74,
+"alergenos": [
+"gluten"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-de-molde-8-raciones-LS19"
+},
+{
+"ref": "LS12",
+"nombre": "Pan rústico (8 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "1 paquete de 8 raciones de 45 g",
+"precio": 16.95,
+"raciones": 8,
+"eurRacion": 2.12,
+"kcal": 125.0,
+"proteina": 13.5,
+"hidratos": 3.65,
+"grasas": 5.35,
+"fibra": 4.1,
+"alergenos": [
+"gluten",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-rustico-8-raciones-LS12"
+},
+{
+"ref": "LG27",
+"nombre": "Plumcake de vainilla y limón (3 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "3 raciones de 50g",
+"precio": 13.5,
+"raciones": 3,
+"eurRacion": 4.5,
+"kcal": 192.0,
+"proteina": 15.0,
+"hidratos": 3.6,
+"grasas": 10.8,
+"fibra": 2.25,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/plumcake-de-vainilla-y-limon-3-raciones-LG27"
+},
+{
+"ref": "DB24",
+"nombre": "Tostadas de chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 3 rebanadas.",
+"precio": 17.0,
+"raciones": 5,
+"eurRacion": 3.4,
+"kcal": 89.2,
+"proteina": 13.3,
+"hidratos": 2.3,
+"grasas": 2.3,
+"fibra": 8.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-chocolate-5-raciones-DB24"
+},
+{
+"ref": "DB28",
+"nombre": "Tostadas de lino (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 3 rebanadas.",
+"precio": 15.0,
+"raciones": 5,
+"eurRacion": 3.0,
+"kcal": 115.5,
+"proteina": 19.86,
+"hidratos": 3.72,
+"grasas": 1.74,
+"fibra": 2.37,
+"alergenos": [
+"gluten"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-lino-5-raciones-DB28"
+},
+{
+"ref": "DB20",
+"nombre": "Tostadas naturales (5 raciones)",
+"gama": "verde",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 3 rebanadas.",
+"precio": 15.0,
+"raciones": 5,
+"eurRacion": 3.0,
+"kcal": 128.4,
+"proteina": 15.0,
+"hidratos": 3.3,
+"grasas": 5.1,
+"fibra": 5.7,
+"alergenos": [
+"gluten",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-naturales-5-raciones-DB20"
+},
+{
+"ref": "DM44",
+"nombre": "Exquisiteces de chocolate con virutas de turrón (5 raciones)",
+"gama": "verde",
+"tipo": "Postres",
+"formato": "5 sobres de 24,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 95.0,
+"proteina": 18.0,
+"hidratos": 2.5,
+"grasas": 1.0,
+"fibra": 0.7,
+"alergenos": [
+"gluten",
+"leche",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/exquisiteces-de-chocolate-con-virutas-de-turron-5-raciones-DM44"
+},
+{
+"ref": "LA12",
+"nombre": "Gominolas de fresa (1 ración)",
+"gama": "verde",
+"tipo": "Postres",
+"formato": "1 bolsa de 70 g",
+"precio": 5.0,
+"raciones": 1,
+"eurRacion": 5.0,
+"kcal": 140.0,
+"proteina": 14.0,
+"hidratos": 3.0,
+"grasas": null,
+"fibra": 40.0,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/gominolas-de-fresa-1-racion-LA12"
+},
+{
+"ref": "DM52",
+"nombre": "Natillas de avellana y praliné (5 raciones)",
+"gama": "verde",
+"tipo": "Postres",
+"formato": "5 raciones de 22,5 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 90.5,
+"proteina": 18.0,
+"hidratos": 1.1,
+"grasas": 1.2,
+"fibra": 0.5,
+"alergenos": [
+"leche",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-avellana-y-praline-5-raciones-DM52"
+},
+{
+"ref": "DSM42",
+"nombre": "Natillas de chocolate crujiente (16 raciones)",
+"gama": "verde",
+"tipo": "Postres",
+"formato": "16 raciones de 25,5 g",
+"precio": 33.0,
+"raciones": 16,
+"eurRacion": 2.06,
+"kcal": 93.3,
+"proteina": 17.9,
+"hidratos": 2.3,
+"grasas": 1.1,
+"fibra": 1.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-chocolate-crujiente-16-raciones-DSM42"
+},
+{
+"ref": "LA74",
+"nombre": "Aritos de chocolate (3 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "3 raciones de 37,5 g",
+"precio": 12.5,
+"raciones": 3,
+"eurRacion": 4.17,
+"kcal": 167.0,
+"proteina": 11.5,
+"hidratos": 2.1,
+"grasas": 10.7,
+"fibra": 8.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/aritos-de-chocolate-3-raciones-LA74"
+},
+{
+"ref": "LA78",
+"nombre": "Bolitas de chocolate blanco",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 raciones de 48 g",
+"precio": 19.0,
+"raciones": 5,
+"eurRacion": 3.8,
+"kcal": 224.0,
+"proteina": 16.6,
+"hidratos": 3.4,
+"grasas": 14.0,
+"fibra": 10.9,
+"alergenos": [
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-blanco-LA78"
+},
+{
+"ref": "LA77",
+"nombre": "Bolitas de chocolate con leche (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 raciones de 46 g",
+"precio": 19.0,
+"raciones": 5,
+"eurRacion": 3.8,
+"kcal": 215.0,
+"proteina": 15.9,
+"hidratos": 4.3,
+"grasas": 13.4,
+"fibra": 9.0,
+"alergenos": [
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-con-leche-5-raciones-LA77"
+},
+{
+"ref": "LA56",
+"nombre": "Chips sabor queso y cebolla (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 bolsas de 25 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 89.0,
+"proteina": 11.2,
+"hidratos": 3.9,
+"grasas": 2.3,
+"fibra": 4.0,
+"alergenos": [
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-queso-y-cebolla-5-raciones-LA56"
+},
+{
+"ref": "LA58",
+"nombre": "Chips sabor sal y pimienta (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 bolsas de 25 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 93.0,
+"proteina": 11.3,
+"hidratos": 4.0,
+"grasas": 2.6,
+"fibra": 4.0,
+"alergenos": [
+"leche",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-pimienta-5-raciones-LA58"
+},
+{
+"ref": "LA57",
+"nombre": "Chips sabor sal y vinagre (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 bolsas de 25 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 90.0,
+"proteina": 11.2,
+"hidratos": 3.5,
+"grasas": 2.5,
+"fibra": 4.5,
+"alergenos": [
+"leche",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-vinagre-5-raciones-LA57"
+},
+{
+"ref": "LA28",
+"nombre": "Cortezas al punto de sal (1 ración)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "Proteinas",
+"precio": 3.5,
+"raciones": 1,
+"eurRacion": 3.5,
+"kcal": 137.5,
+"proteina": 16.0,
+"hidratos": 0.0,
+"grasas": 7.75,
+"fibra": 0.0,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-al-punto-de-sal-1-racion-LA28"
+},
+{
+"ref": "LA71",
+"nombre": "Cortezas sabor barbacoa (1 ración)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "1 bolsa de 30 g",
+"precio": 3.5,
+"raciones": 1,
+"eurRacion": 3.5,
+"kcal": 170.0,
+"proteina": 16.0,
+"hidratos": 1.8,
+"grasas": 11.0,
+"fibra": null,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-sabor-barbacoa-1-racion-LA71"
+},
+{
+"ref": "DL74",
+"nombre": "Regañadas al romero (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 raciones de 30 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 115.5,
+"proteina": 9.1,
+"hidratos": 2.3,
+"grasas": 5.6,
+"fibra": 8.5,
+"alergenos": [
+"gluten",
+"huevo",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/reganadas-al-romero-5-raciones-DL74"
+},
+{
+"ref": "LA72",
+"nombre": "Snack de lomo de pavo (1 ración)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "1 envase de 40 g",
+"precio": 4.5,
+"raciones": 1,
+"eurRacion": 4.5,
+"kcal": 73.6,
+"proteina": 12.4,
+"hidratos": 0.56,
+"grasas": 2.4,
+"fibra": null,
+"alergenos": [],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-lomo-de-pavo-1-racion-LA72"
+},
+{
+"ref": "LA55",
+"nombre": "Snack de queso chedar (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 unidades de 30 g.",
+"precio": 17.0,
+"raciones": 5,
+"eurRacion": 3.4,
+"kcal": 135.0,
+"proteina": 14.0,
+"hidratos": 0.0,
+"grasas": 9.0,
+"fibra": 0.0,
+"alergenos": [
+"leche",
+"lactosa"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-queso-chedar-5-raciones-LA55"
+},
+{
+"ref": "LA65",
+"nombre": "Sticks de chocolate (5 raciones)",
+"gama": "verde",
+"tipo": "Snacks",
+"formato": "5 raciones de 40 g",
+"precio": 18.95,
+"raciones": 5,
+"eurRacion": 3.79,
+"kcal": 188.0,
+"proteina": 12.0,
+"hidratos": 4.4,
+"grasas": 13.0,
+"fibra": 6.8,
+"alergenos": [
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chocolate-5-raciones-LA65"
+},
+{
+"ref": "LB20",
+"nombre": "Barritas sabor naranja con chocolate (5 raciones)",
+"gama": "amarilla",
+"tipo": "Barritas",
+"formato": "5 barritas de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 139.0,
+"proteina": 13.0,
+"hidratos": 5.6,
+"grasas": 5.1,
+"fibra": 9.7,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/barritas-sabor-naranja-con-chocolate-5-raciones-LB20"
+},
+{
+"ref": "LA29",
+"nombre": "Hamburguesa de pollo (5 raciones)",
+"gama": "amarilla",
+"tipo": "Comidas saladas",
+"formato": "5 raciones de 100 g",
+"precio": 18.5,
+"raciones": 5,
+"eurRacion": 3.7,
+"kcal": 111.0,
+"proteina": 17.0,
+"hidratos": 5.6,
+"grasas": 2.4,
+"fibra": null,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/hamburguesa-de-pollo-5-raciones-LA29"
+},
+{
+"ref": "LA13",
+"nombre": "Nachos sabor pollo barbacoa (5 raciones)",
+"gama": "amarilla",
+"tipo": "Comidas saladas",
+"formato": "5 bolsas de 30 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 116.0,
+"proteina": 14.0,
+"hidratos": 4.8,
+"grasas": 3.7,
+"fibra": 4.9,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-pollo-barbacoa-5-raciones-LA13"
+},
+{
+"ref": "LA14",
+"nombre": "Nachos sabor bacón (5 raciones)",
+"gama": "amarilla",
+"tipo": "Snacks",
+"formato": "5 bolsas de 30 g",
+"precio": 15.5,
+"raciones": 5,
+"eurRacion": 3.1,
+"kcal": 117.0,
+"proteina": 14.0,
+"hidratos": 4.9,
+"grasas": 3.7,
+"fibra": 5.0,
+"alergenos": [
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-bacon-5-raciones-LA14"
+},
+{
+"ref": "LB02",
+"nombre": "Barrita crisp de chocolate (5 raciones)",
+"gama": "roja",
+"tipo": "Barritas",
+"formato": "5 raciones de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 119.0,
+"proteina": 11.5,
+"hidratos": 8.1,
+"grasas": 3.6,
+"fibra": 10.2,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-de-chocolate-5-raciones-LB02"
+},
+{
+"ref": "30LB03",
+"nombre": "Barrita crisp yogur frutos rojos (30 raciones)",
+"gama": "roja",
+"tipo": "Barritas",
+"formato": "30 barritas de 40 g",
+"precio": 80.0,
+"raciones": 30,
+"eurRacion": 2.67,
+"kcal": 141.0,
+"proteina": 11.2,
+"hidratos": 9.5,
+"grasas": 5.1,
+"fibra": 9.7,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-30-raciones-30LB03"
+},
+{
+"ref": "LB03",
+"nombre": "Barrita crisp yogur frutos rojos (5 raciones)",
+"gama": "roja",
+"tipo": "Barritas",
+"formato": "5 barritas de 40 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 141.0,
+"proteina": 11.2,
+"hidratos": 9.5,
+"grasas": 5.1,
+"fibra": 9.7,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-5-raciones-LB03"
+},
+{
+"ref": "30LB02",
+"nombre": "Caja de 30 barritas de chocolate (30 raciones)",
+"gama": "roja",
+"tipo": "Barritas",
+"formato": "30 barritas de 40 g",
+"precio": 80.0,
+"raciones": 30,
+"eurRacion": 2.67,
+"kcal": 140.0,
+"proteina": 12.2,
+"hidratos": 9.7,
+"grasas": 3.9,
+"fibra": 10.2,
+"alergenos": [
+"leche",
+"lactosa",
+"soja",
+"sulfitos"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": false,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-barritas-de-chocolate-30-raciones-30LB02"
+},
+{
+"ref": "LG29",
+"nombre": "Obleas sabor fresa (5 raciones)",
+"gama": "roja",
+"tipo": "Obleas y dulces",
+"formato": "5 obleas de 41,1 g",
+"precio": 16.5,
+"raciones": 5,
+"eurRacion": 3.3,
+"kcal": 194.0,
+"proteina": 15.0,
+"hidratos": 13.0,
+"grasas": 9.0,
+"fibra": 0.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/obleas-sabor-fresa-5-raciones-LG29"
+},
+{
+"ref": "LG09",
+"nombre": "Galletas chocolate chips (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 3 galletas.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 44.0,
+"proteina": 2.3,
+"hidratos": 4.0,
+"grasas": 2.0,
+"fibra": 0.4,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "gama",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-chocolate-chips-5-raciones-LG09"
+},
+{
+"ref": "DB45",
+"nombre": "Galletas con pepitas de chocolate (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 raciones.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 175.1,
+"proteina": 10.7,
+"hidratos": 14.1,
+"grasas": 8.3,
+"fibra": 0.9,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-con-pepitas-de-chocolate-5-raciones-DB45"
+},
+{
+"ref": "LG02",
+"nombre": "Galletas de chocolate (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 4 galletas.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 52.0,
+"proteina": 2.8,
+"hidratos": 4.5,
+"grasas": 2.4,
+"fibra": 0.6,
+"alergenos": [
+"gluten",
+"leche",
+"huevo"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-chocolate-5-raciones-LG02"
+},
+{
+"ref": "LG03",
+"nombre": "Galletas de frutos rojos (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 5 galletas.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 36.0,
+"proteina": 2.3,
+"hidratos": 2.9,
+"grasas": 1.7,
+"fibra": 0.23,
+"alergenos": [
+"gluten",
+"leche",
+"huevo"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-frutos-rojos-5-raciones-LG03"
+},
+{
+"ref": "LG05",
+"nombre": "Galletas de manzana y canela (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 5 galletas.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 37.0,
+"proteina": 2.3,
+"hidratos": 3.1,
+"grasas": 1.7,
+"fibra": 0.3,
+"alergenos": [
+"gluten",
+"leche",
+"huevo"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-manzana-y-canela-5-raciones-LG05"
+},
+{
+"ref": "LG01",
+"nombre": "Galletas de naranja (5 raciones)",
+"gama": "roja",
+"tipo": "Pan, tostadas y galletas",
+"formato": "5 sobres de 5 galletas.",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 36.0,
+"proteina": 2.2,
+"hidratos": 3.0,
+"grasas": 1.7,
+"fibra": 0.11,
+"alergenos": [
+"gluten",
+"leche",
+"huevo"
+],
+"fases": [
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-naranja-5-raciones-LG01"
+},
+{
+"ref": "30LG12",
+"nombre": "Caja de 30 obleas de yogur (30 raciones)",
+"gama": "roja",
+"tipo": "Postres",
+"formato": "30 obleas de 42 g",
+"precio": 80.0,
+"raciones": 30,
+"eurRacion": 2.67,
+"kcal": 205.0,
+"proteina": 18.2,
+"hidratos": 7.5,
+"grasas": 10.3,
+"fibra": 4.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-obleas-de-yogur-30-raciones-30LG12"
+},
+{
+"ref": "LG12",
+"nombre": "Oblea yogur Essential (5 raciones)",
+"gama": "roja",
+"tipo": "Postres",
+"formato": "5 obleas de 42 g",
+"precio": 14.95,
+"raciones": 5,
+"eurRacion": 2.99,
+"kcal": 205.0,
+"proteina": 18.2,
+"hidratos": 7.5,
+"grasas": 10.3,
+"fibra": 4.3,
+"alergenos": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+],
+"fases": [
+"1",
+"2",
+"3",
+"M"
+],
+"fasesFuente": "catalogo",
+"listo": true,
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/oblea-yogur-essential-5-raciones-LG12"
+}
+]

@@ -85,7 +85,10 @@ export function SuplementosPicker({ seleccion = [] }: { seleccion?: string[] }) 
           <label key={s.key} className="flex items-start gap-2 rounded-lg border border-line px-3 py-2 has-[:checked]:border-brand has-[:checked]:bg-brand-soft">
             <input type="checkbox" name="suplementos" value={s.key} defaultChecked={seleccion.includes(s.key)} className="mt-0.5 accent-[var(--brand)]" />
             <span>
-              <span className="block font-medium">{s.nombre}</span>
+              <span className="block font-medium">
+                {s.nombre}
+                {s.ruta === "farmaco" && <span className="ml-1 text-xs font-normal text-brand">· apoyo proteico con tratamiento</span>}
+              </span>
               <span className="text-xs text-ink-soft">{s.pauta}</span>
             </span>
           </label>

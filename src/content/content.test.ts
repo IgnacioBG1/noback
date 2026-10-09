@@ -77,3 +77,21 @@ describe("Fases Essential", () => {
     expect(FASES.find((f) => f.key === "sm_2_1")!.verduras.listas[0].items).toContain("Pepinillo natural");
   });
 });
+
+import { PRODUCTOS, alergenosDeTexto, productosParaFase } from "./productos";
+import { faseCatalogo } from "./essential";
+describe("Catálogo de productos Essential", () => {
+  it("142 productos de dieta con nutrición, y las galletas de gama roja solo desde la fase 3", () => {
+    expect(PRODUCTOS).toHaveLength(142);
+    expect(PRODUCTOS.every((p) => p.proteina != null && p.fases.length > 0)).toBe(true);
+    expect(productosParaFase("1").some((p) => p.ref === "DB45")).toBe(false);
+    expect(productosParaFase("3").some((p) => p.ref === "DB45")).toBe(true);
+  });
+  it("mapea fases del protocolo y alergias escritas a mano", () => {
+    expect(faseCatalogo("sm_2_1")).toBe("2");
+    expect(faseCatalogo("fase_3_4")).toBe("3");
+    expect(faseCatalogo("mantenimiento")).toBe("M");
+    expect(alergenosDeTexto("Intolerancia a la LACTOSA y celíaca")).toEqual(["gluten", "lactosa"]);
+    expect(alergenosDeTexto("—")).toEqual([]);
+  });
+});

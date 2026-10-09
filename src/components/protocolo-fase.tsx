@@ -1,5 +1,7 @@
 import { Card, CardTitle, Icon, fmtFecha } from "./ui";
-import { EJERCICIO, FRUTAS, GAMAS, IMPORTANTE, LACTEOS, LEGUMBRES, PAN, PROTEINAS, SUPLEMENTOS, type Comida, type Fase } from "@/content/essential";
+import { CatalogoProductos } from "./catalogo-productos";
+import { FILTROS_ALERGENOS, PROTEINA_MEDIANA_RACION, TIPOS, productosParaFase } from "@/content/productos";
+import { faseCatalogo, EJERCICIO, FRUTAS, GAMAS, IMPORTANTE, LACTEOS, LEGUMBRES, PAN, PROTEINAS, SUPLEMENTOS, type Comida, type Fase } from "@/content/essential";
 
 function Chip({ t, siempre, color }: { t: string; siempre?: boolean; color: string }) {
   return (
@@ -85,6 +87,7 @@ export function ProtocoloFase({
   inicio,
   mixtoOpcion,
   suplementos,
+  alergias = [],
 }: {
   fase: Fase;
   productosDia: number | null;
@@ -92,6 +95,7 @@ export function ProtocoloFase({
   inicio: string | null;
   mixtoOpcion: string | null;
   suplementos: string[];
+  alergias?: string[];
 }) {
   const dia = inicio ? Math.floor((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(inicio)) / 86_400_000) + 1 : null;
   const opciones = f.opciones ? f.opciones.filter((o) => !mixtoOpcion || o.nombre.endsWith(mixtoOpcion)) : [];
@@ -108,6 +112,11 @@ export function ProtocoloFase({
           <p className="mt-2 text-sm text-white/90">{f.resumen}</p>
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
             {productosDia != null && <span className="rounded-full bg-white/20 px-3 py-1"><span className="num">{productosDia}</span> productos Essential al día</span>}
+            {productosDia ? (
+              <span className="rounded-full bg-white/20 px-3 py-1">
+                ≈ <span className="num">{Math.round(productosDia * PROTEINA_MEDIANA_RACION)}</span> g de proteína de los productos
+              </span>
+            ) : null}
             {periodoDias != null && (
               <span className="rounded-full bg-white/20 px-3 py-1">
                 {dia != null && dia >= 1 ? <>Día <span className="num">{Math.min(dia, periodoDias)}</span> de <span className="num">{periodoDias}</span></> : <><span className="num">{periodoDias}</span> días</>}
@@ -160,6 +169,19 @@ export function ProtocoloFase({
           <ul className="mt-2 space-y-1 text-sm">
             {no.map((n) => <li key={n}>· {n}</li>)}
           </ul>
+        </Card>
+      )}
+
+      {faseCatalogo(f.key) && (
+        <Card>
+          <CardTitle aside={f.key === "mantenimiento" ? "para cualquier momento" : `permitidos en ${f.nombre.toLowerCase()}`}>Productos Essential para tu fase</CardTitle>
+          {["1", "2"].includes(faseCatalogo(f.key)!) && (
+            <ul className="mb-4 space-y-1 rounded-xl bg-bg p-3 text-sm">
+              <li>· Mejor de <strong>gama verde</strong>.</li>
+              <li>· Como máximo <strong>1 de gama amarilla</strong> y <strong>1 de gama roja</strong> al día, salvo otra indicación de tu médico.</li>
+            </ul>
+          )}
+          <CatalogoProductos productos={productosParaFase(faseCatalogo(f.key))} tipos={TIPOS} filtrosAlergenos={FILTROS_ALERGENOS} alergiasIniciales={alergias} />
         </Card>
       )}
 

@@ -178,6 +178,11 @@ export function ConsultaForm({
               <input id="pasos_dia" name="pasos_dia" inputMode="numeric" defaultValue={s(planActual?.pasos_dia)} className={`${inputClass} num`} />
             </Field>
             {route === "farmaco" && (
+              <div className="md:col-span-3">
+                <SuplementosPicker seleccion={planActual?.suplementos ?? []} />
+              </div>
+            )}
+            {route === "farmaco" && (
               <Field label="Medicamento, dosis y pauta" name="medicacion" error={e.medicacion} hint="Lo verá el paciente en su plan." className="md:col-span-3">
                 <textarea id="medicacion" name="medicacion" rows={2} defaultValue={s(planActual?.medicacion)} className={inputClass} />
               </Field>
