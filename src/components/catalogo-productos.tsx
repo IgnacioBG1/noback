@@ -38,16 +38,21 @@ export function CatalogoProductos({
   const [gama, setGama] = useState<string | null>(null);
   const [orden, setOrden] = useState<"proteina" | "precio" | "nombre">("proteina");
   const [todos, setTodos] = useState(false);
+  const [trazas, setTrazas] = useState(true);
 
   const lista = useMemo(() => {
     const excluye = filtrosAlergenos.filter((f) => sin.includes(f.key)).flatMap((f) => f.excluye);
     const l = productos.filter(
-      (p) => (!tipo || p.tipo === tipo) && (!gama || p.gama === gama) && !p.alergenos.some((a) => excluye.includes(a)),
+      (p) =>
+        (!tipo || p.tipo === tipo) &&
+        (!gama || p.gama === gama) &&
+        !p.alergenos.some((a) => excluye.includes(a)) &&
+        !(trazas && p.trazas.some((a) => excluye.includes(a))),
     );
     return l.sort((a, b) =>
       orden === "proteina" ? (b.proteina ?? 0) - (a.proteina ?? 0) : orden === "precio" ? (a.eurRacion ?? 99) - (b.eurRacion ?? 99) : a.nombre.localeCompare(b.nombre, "es"),
     );
-  }, [productos, tipo, sin, gama, orden, filtrosAlergenos]);
+  }, [productos, tipo, sin, gama, orden, filtrosAlergenos, trazas]);
   const visibles = todos ? lista : lista.slice(0, 12);
 
   return (
@@ -91,6 +96,12 @@ export function CatalogoProductos({
             </select>
           </label>
         </div>
+        {sin.length > 0 && (
+          <label className="flex items-center gap-2 text-xs text-ink-soft">
+            <input type="checkbox" checked={trazas} onChange={(e) => setTrazas(e.target.checked)} className="accent-[var(--brand)]" />
+            Excluir también los que pueden contener trazas
+          </label>
+        )}
         {alergiasIniciales.length > 0 && <p className="text-xs text-ink-soft">Hemos aplicado los filtros de las alergias que nos indicaste. Comprueba siempre la etiqueta.</p>}
       </div>
 
@@ -124,7 +135,10 @@ export function CatalogoProductos({
               ))}
             </dl>
             <div className="mt-2 flex items-center justify-between gap-2 text-xs text-ink-soft">
-              <span className="truncate">{p.alergenos.length ? `Contiene: ${p.alergenos.join(", ")}` : "Sin alérgenos principales"}</span>
+              <span className="truncate">
+                {p.alergenos.length ? `Contiene: ${p.alergenos.join(", ")}` : "Sin alérgenos principales"}
+                {p.trazas.length ? ` · trazas: ${p.trazas.join(", ")}` : ""}
+              </span>
               <a href={p.url} target="_blank" rel="noopener noreferrer" className="shrink-0 text-brand hover:underline">
                 Ver ficha
               </a>

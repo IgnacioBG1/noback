@@ -27,7 +27,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-cookie-cream-5-raciones-LB06"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-cookie-cream-5-raciones-LB06",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LB10",
@@ -57,7 +62,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-chocolate-blanco-gama-verde-5-raciones-LB10"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-chocolate-blanco-gama-verde-5-raciones-LB10",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"sulfitos"
+]
 },
 {
 "ref": "LB16",
@@ -86,7 +96,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-cookies-5-raciones-LB16"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-de-cookies-5-raciones-LB16",
+"trazas": [
+"gluten",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LB09",
@@ -116,7 +130,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-caramelo-5-raciones-LB09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-caramelo-5-raciones-LB09",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "LB08",
@@ -146,7 +165,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-manzana-5-raciones-LB08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-gama-verde-manzana-5-raciones-LB08",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "LB19",
@@ -175,7 +199,13 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-panna-cotta-red-berries-LB19"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barrita-panna-cotta-red-berries-LB19",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"mostaza",
+"altramuces"
+]
 },
 {
 "ref": "10LB09",
@@ -205,7 +235,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-caramelo-10-unidades-10LB09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-caramelo-10-unidades-10LB09",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "10LB10",
@@ -235,7 +270,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-chocolate-blanco-10-unidades-10LB10"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-chocolate-blanco-10-unidades-10LB10",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"sulfitos"
+]
 },
 {
 "ref": "10LB08",
@@ -265,7 +305,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-manzana-10-unidades-10LB08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-manzana-10-unidades-10LB08",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "LB18",
@@ -294,7 +339,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-turron-5-raciones-LB18"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/barritas-de-turron-5-raciones-LB18",
+"trazas": [
+"huevo",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "30LB09",
@@ -324,7 +374,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-caramelo-30-raciones-30LB09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-caramelo-30-raciones-30LB09",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "30LB10",
@@ -354,7 +409,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-chocolate-blanco-30-raciones-30LB10"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-chocolate-blanco-30-raciones-30LB10",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"sulfitos"
+]
 },
 {
 "ref": "30LB08",
@@ -384,7 +444,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-manzana-30-raciones-30LB08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-barritas-de-manzana-30-raciones-30LB08",
+"trazas": [
+"frutos de cáscara",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "DPM01",
@@ -412,7 +477,15 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-capuchino-formato-economico-16-raciones-DPM01"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-capuchino-formato-economico-16-raciones-DPM01",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "LE27",
@@ -440,7 +513,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-cafe-frape-16-raciones-LE27"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-cafe-frape-16-raciones-LE27",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DM41",
@@ -467,7 +553,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-5-raciones-DM41"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-5-raciones-DM41",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LE09",
@@ -495,7 +594,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-belga-formato-economico-16-raciones-LE09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-belga-formato-economico-16-raciones-LE09",
+"trazas": [
+"huevo",
+"soja",
+"pescado"
+]
 },
 {
 "ref": "LE16",
@@ -523,7 +627,15 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-16-raciones-LE16"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-16-raciones-LE16",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "5LE16",
@@ -551,7 +663,15 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-500-g-20-raciones-5LE16"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-blanco-formato-economico-500-g-20-raciones-5LE16",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "5LE05",
@@ -579,7 +699,15 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-con-leche-formato-economico-500g-20-raciones-5LE05"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-con-leche-formato-economico-500g-20-raciones-5LE05",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "5LE06",
@@ -607,7 +735,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-intenso-formato-economico-500g-20-raciones-5LE06"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-chocolate-intenso-formato-economico-500g-20-raciones-5LE06",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LE19",
@@ -635,7 +776,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-formato-economico-16-raciones-LE19"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-formato-economico-16-raciones-LE19",
+"trazas": [
+"huevo",
+"soja",
+"pescado"
+]
 },
 {
 "ref": "DM62",
@@ -662,7 +808,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-y-platano-5-raciones-DM62"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-de-fresa-y-platano-5-raciones-DM62",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DL33",
@@ -690,7 +849,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-preparado-de-cafe-moka-1-racion-DL33"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-preparado-de-cafe-moka-1-racion-DL33",
+"trazas": [
+"soja"
+]
 },
 {
 "ref": "5LE28",
@@ -718,7 +880,12 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-cookies-cream-formato-economico-400g-20-raciones-5LE28"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-cookies-cream-formato-economico-400g-20-raciones-5LE28",
+"trazas": [
+"huevo",
+"soja",
+"frutos de cáscara"
+]
 },
 {
 "ref": "5LE29",
@@ -746,7 +913,12 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-chocolate-con-colageno-formato-economico-20-raciones-5LE29"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-chocolate-con-colageno-formato-economico-20-raciones-5LE29",
+"trazas": [
+"huevo",
+"soja",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LE07",
@@ -775,7 +947,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-fresa-galleta-formato-economico-16-raciones-LE07"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-fresa-galleta-formato-economico-16-raciones-LE07",
+"trazas": [
+"huevo",
+"soja",
+"pescado"
+]
 },
 {
 "ref": "DM68",
@@ -802,7 +979,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-mango-pasion-5-raciones-DM68"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-mango-pasion-5-raciones-DM68",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LE13",
@@ -831,7 +1021,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-vainilla-canela-formato-economico-16-raciones-LE13"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/batido-sabor-vainilla-canela-formato-economico-16-raciones-LE13",
+"trazas": [
+"huevo",
+"soja"
+]
 },
 {
 "ref": "DL13",
@@ -859,7 +1053,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-chocolate-1-racion-DL13"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-chocolate-1-racion-DL13",
+"trazas": [
+"soja"
+]
 },
 {
 "ref": "DL32",
@@ -887,7 +1084,10 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-vainilla-1-racion-DL32"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brick-de-vainilla-1-racion-DL32",
+"trazas": [
+"soja"
+]
 },
 {
 "ref": "LE30",
@@ -914,7 +1114,13 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/proteina-de-sioja-neutra-20-raciones-LE30"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/proteina-de-sioja-neutra-20-raciones-LE30",
+"trazas": [
+"leche",
+"huevo",
+"frutos de cáscara",
+"pescado"
+]
 },
 {
 "ref": "DL08",
@@ -942,7 +1148,11 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-fresa-1-racion-DL08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-fresa-1-racion-DL08",
+"trazas": [
+"huevo",
+"soja"
+]
 },
 {
 "ref": "DL07",
@@ -970,7 +1180,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-platano-1-racion-DL07"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/smoothie-de-platano-1-racion-DL07",
+"trazas": [
+"huevo",
+"soja"
+]
 },
 {
 "ref": "LA76",
@@ -997,7 +1211,16 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/base-de-pizza-italiana-2-raciones-LA76"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/base-de-pizza-italiana-2-raciones-LA76",
+"trazas": [
+"leche",
+"huevo",
+"soja",
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "DNS11",
@@ -1029,7 +1252,8 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/consome-sabor-pollo-16-raciones-DNS11"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/consome-sabor-pollo-16-raciones-DNS11",
+"trazas": []
 },
 {
 "ref": "DL90",
@@ -1059,7 +1283,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crackers-de-pizza-5-raciones-DL90"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crackers-de-pizza-5-raciones-DL90",
+"trazas": [
+"soja",
+"frutos de cáscara"
+]
 },
 {
 "ref": "DS75",
@@ -1088,7 +1316,15 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-8-vegetales-con-picatostes-5-raciones-DS75"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-8-vegetales-con-picatostes-5-raciones-DS75",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"frutos de cáscara",
+"pescado",
+"sulfitos"
+]
 },
 {
 "ref": "DS42",
@@ -1116,7 +1352,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-calabaza-5-raciones-DS42"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-calabaza-5-raciones-DS42",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS02",
@@ -1143,7 +1392,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-champinones-5-raciones-DS02"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-champinones-5-raciones-DS02",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS72",
@@ -1172,7 +1434,14 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-hortalizas-verdes-con-crutones-5-raciones-DS72"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-hortalizas-verdes-con-crutones-5-raciones-DS72",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"frutos de cáscara",
+"pescado"
+]
 },
 {
 "ref": "DS03",
@@ -1199,7 +1468,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-puerros-5-raciones-DS03"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-puerros-5-raciones-DS03",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DNS08",
@@ -1229,7 +1511,18 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-verduras-del-huerto-16-raciones-DNS08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-de-verduras-del-huerto-16-raciones-DNS08",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS97",
@@ -1259,7 +1552,13 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-sabor-pollo-con-picatostes-5-raciones-DS97"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-sabor-pollo-con-picatostes-5-raciones-DS97",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "DM71",
@@ -1288,7 +1587,13 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crepe-natural-5-raciones-DM71"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crepe-natural-5-raciones-DM71",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"pescado",
+"apio"
+]
 },
 {
 "ref": "LA09",
@@ -1315,7 +1620,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fuet-5-raciones-LA09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fuet-5-raciones-LA09",
+"trazas": []
 },
 {
 "ref": "DS53",
@@ -1345,7 +1651,13 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fusilli-5-raciones-DS53"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/fusilli-5-raciones-DS53",
+"trazas": [
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "LG06",
@@ -1375,7 +1687,18 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-de-chocolate-con-crema-de-vainilla-5-raciones-LG06"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-de-chocolate-con-crema-de-vainilla-5-raciones-LG06",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA51",
@@ -1404,7 +1727,17 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mousse-de-atun-anchoas-y-pimientos-5-raciones-LA51"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mousse-de-atun-anchoas-y-pimientos-5-raciones-LA51",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"mostaza",
+"apio",
+"cacahuete",
+"moluscos"
+]
 },
 {
 "ref": "DS52",
@@ -1431,7 +1764,16 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nidos-de-pasta-2-raciones-DS52"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nidos-de-pasta-2-raciones-DS52",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara",
+"mostaza",
+"altramuces"
+]
 },
 {
 "ref": "LA79",
@@ -1456,7 +1798,8 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/noodles-de-konjac-LA79"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/noodles-de-konjac-LA79",
+"trazas": []
 },
 {
 "ref": "DS31",
@@ -1486,7 +1829,17 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nuggets-de-pollo-5-raciones-DS31"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/nuggets-de-pollo-5-raciones-DS31",
+"trazas": [
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS43",
@@ -1517,7 +1870,17 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pastel-de-bacon-5-raciones-DS43"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pastel-de-bacon-5-raciones-DS43",
+"trazas": [
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA08",
@@ -1544,7 +1907,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-5-raciones-LA08"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-5-raciones-LA08",
+"trazas": []
 },
 {
 "ref": "LA50",
@@ -1573,7 +1937,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-de-atun-5-raciones-LA50"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pate-de-atun-5-raciones-LA50",
+"trazas": []
 },
 {
 "ref": "LA41",
@@ -1602,7 +1967,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/queso-parmesano-5-raciones-LA41"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/queso-parmesano-5-raciones-LA41",
+"trazas": []
 },
 {
 "ref": "LA01",
@@ -1629,7 +1995,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salchichas-frankfurt-5-raciones-LA01"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salchichas-frankfurt-5-raciones-LA01",
+"trazas": []
 },
 {
 "ref": "LA23",
@@ -1656,7 +2023,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salmon-en-lata-4-raciones-LA23"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salmon-en-lata-4-raciones-LA23",
+"trazas": []
 },
 {
 "ref": "LA06",
@@ -1683,7 +2051,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salsa-shirataki-bolonesa-100-g-LA06"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/salsa-shirataki-bolonesa-100-g-LA06",
+"trazas": []
 },
 {
 "ref": "LA22",
@@ -1711,7 +2080,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-salchichon-1-racion-LA22"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-salchichon-1-racion-LA22",
+"trazas": []
 },
 {
 "ref": "DS55",
@@ -1742,7 +2112,16 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-china-5-raciones-DS55"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-china-5-raciones-DS55",
+"trazas": [
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS06",
@@ -1771,7 +2150,18 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-minestrone-5-raciones-DS06"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sopa-minestrone-5-raciones-DS06",
+"trazas": [
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA20",
@@ -1798,7 +2188,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chorizo-5-raciones-LA20"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chorizo-5-raciones-LA20",
+"trazas": []
 },
 {
 "ref": "DNS17",
@@ -1828,7 +2219,18 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-bacon-y-queso-DNS17"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-bacon-y-queso-DNS17",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS17",
@@ -1858,7 +2260,18 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-jamon-y-queso-5-raciones-DS17"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-jamon-y-queso-5-raciones-DS17",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DS50",
@@ -1888,7 +2301,18 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-queso-y-patata-5-raciones-DS50"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-queso-y-patata-5-raciones-DS50",
+"trazas": [
+"gluten",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA63",
@@ -1915,7 +2339,11 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-trigo-6-raciones-LA63"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tortilla-de-trigo-6-raciones-LA63",
+"trazas": [
+"soja",
+"mostaza"
+]
 },
 {
 "ref": "LA61",
@@ -1940,7 +2368,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-curado-5-raciones-LA61"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-curado-5-raciones-LA61",
+"trazas": []
 },
 {
 "ref": "LA60",
@@ -1968,7 +2397,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-5-raciones-LA60"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-5-raciones-LA60",
+"trazas": []
 },
 {
 "ref": "LA64",
@@ -1996,7 +2426,8 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-de-finas-hierbas-5-raciones-LA64"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/untable-de-queso-suave-de-finas-hierbas-5-raciones-LA64",
+"trazas": []
 },
 {
 "ref": "LA67",
@@ -2026,7 +2457,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bollito-con-pepitas-de-chocolate-3-raciones-LA67"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bollito-con-pepitas-de-chocolate-3-raciones-LA67",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"altramuces"
+]
 },
 {
 "ref": "LA69",
@@ -2057,7 +2493,8 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brownie-de-chocolate-con-avellanas-3-raciones-LA69"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/brownie-de-chocolate-con-avellanas-3-raciones-LA69",
+"trazas": []
 },
 {
 "ref": "30LG15",
@@ -2087,7 +2524,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-chocolate-recubiertas-30-raciones-30LG15"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-chocolate-recubiertas-30-raciones-30LG15",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "30LG11",
@@ -2117,7 +2558,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-jamon-y-queso-30-raciones-30LG11"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-jamon-y-queso-30-raciones-30LG11",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "30LG16",
@@ -2147,7 +2592,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-vainilla-recubiertas-de-chocolate-30-raciones-30LG16"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/caja-de-30-obleas-de-vainilla-recubiertas-de-chocolate-30-raciones-30LG16",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "DL27",
@@ -2174,7 +2624,13 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-untable-de-avellanas-con-chocolate-DL27"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crema-untable-de-avellanas-con-chocolate-DL27",
+"trazas": [
+"gluten",
+"leche",
+"lactosa",
+"soja"
+]
 },
 {
 "ref": "LA75",
@@ -2205,7 +2661,10 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crocanti-praline-5-raciones-LA75"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crocanti-praline-5-raciones-LA75",
+"trazas": [
+"cacahuete"
+]
 },
 {
 "ref": "LA66",
@@ -2234,7 +2693,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crock-de-chocolate-y-avellana-5-raciones-LA66"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/crock-de-chocolate-y-avellana-5-raciones-LA66",
+"trazas": [
+"huevo",
+"soja",
+"cacahuete"
+]
 },
 {
 "ref": "DL31",
@@ -2259,7 +2723,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-albaricoque-10-raciones-DL31"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-albaricoque-10-raciones-DL31",
+"trazas": []
 },
 {
 "ref": "DL24",
@@ -2284,7 +2749,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-fresa-DL24"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mermelada-de-fresa-DL24",
+"trazas": []
 },
 {
 "ref": "LG11",
@@ -2314,7 +2780,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/oblea-de-jamon-y-queso-essential-5-raciones-LG11"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/oblea-de-jamon-y-queso-essential-5-raciones-LG11",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG15",
@@ -2344,7 +2814,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-chocolate-recubiertas-gama-verde-5-raciones-LG15"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-chocolate-recubiertas-gama-verde-5-raciones-LG15",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG16",
@@ -2374,7 +2848,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-vainilla-recubiertas-gama-verde-5-raciones-LG16"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-vainilla-recubiertas-gama-verde-5-raciones-LG16",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG19",
@@ -2404,7 +2882,17 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-avellana-5-raciones-LG19"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-avellana-5-raciones-LG19",
+"trazas": [
+"huevo",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LG18",
@@ -2433,7 +2921,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-coco-5-raciones-LG18"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-sabor-coco-5-raciones-LG18",
+"trazas": [
+"huevo"
+]
 },
 {
 "ref": "SA05",
@@ -2465,7 +2956,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-limon-1-racion-SA05"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-limon-1-racion-SA05",
+"trazas": []
 },
 {
 "ref": "SA04",
@@ -2498,7 +2990,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-naranja-1-racion-SA04"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sabor-naranja-1-racion-SA04",
+"trazas": []
 },
 {
 "ref": "DM78",
@@ -2526,7 +3019,20 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-con-leche-5-raciones-DM78"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-con-leche-5-raciones-DM78",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DM77",
@@ -2554,7 +3060,18 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-negro-crujiente-5-raciones-DM77"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tableta-de-chocolate-negro-crujiente-5-raciones-DM77",
+"trazas": [
+"gluten",
+"huevo",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos"
+]
 },
 {
 "ref": "LS18",
@@ -2582,7 +3099,11 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/biscotes-con-semillas-8-raciones-LS18"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/biscotes-con-semillas-8-raciones-LS18",
+"trazas": [
+"leche",
+"lactosa"
+]
 },
 {
 "ref": "LA44",
@@ -2612,7 +3133,13 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-3-raciones-LA44"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-3-raciones-LA44",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "LA52",
@@ -2642,7 +3169,14 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-relleno-de-chocolate-3-raciones-LA52"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-relleno-de-chocolate-3-raciones-LA52",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "LA59",
@@ -2672,7 +3206,14 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-salado-3-raciones-LA59"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/croissant-salado-3-raciones-LA59",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "LG26",
@@ -2703,7 +3244,11 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galleta-alargada-de-vainilla-con-chocolate-5-raciones-LG26"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galleta-alargada-de-vainilla-con-chocolate-5-raciones-LG26",
+"trazas": [
+"soja",
+"altramuces"
+]
 },
 {
 "ref": "LG22",
@@ -2734,7 +3279,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-5-raciones-LG22"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-5-raciones-LG22",
+"trazas": [
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG24",
@@ -2765,7 +3313,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-con-leche-5-raciones-LG24"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-recubiertas-de-chocolate-con-leche-5-raciones-LG24",
+"trazas": [
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG23",
@@ -2796,7 +3347,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-sabor-naranja-recubiertas-de-chocolate-5-raciones-LG23"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/galletas-sabor-naranja-recubiertas-de-chocolate-5-raciones-LG23",
+"trazas": [
+"frutos de cáscara"
+]
 },
 {
 "ref": "DB27",
@@ -2826,7 +3380,14 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mini-galletas-vainilla-limon-5-raciones-DB27"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/mini-galletas-vainilla-limon-5-raciones-DB27",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "DB26",
@@ -2856,7 +3417,14 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/minigalletas-de-naranja-5-raciones-DB26"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/minigalletas-de-naranja-5-raciones-DB26",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"mostaza",
+"cacahuete",
+"altramuces"
+]
 },
 {
 "ref": "LG28",
@@ -2886,7 +3454,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/muffin-de-frutos-rojos-3-raciones-LG28"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/muffin-de-frutos-rojos-3-raciones-LG28",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"altramuces"
+]
 },
 {
 "ref": "LG25",
@@ -2916,7 +3489,11 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-cookie-cream-5-raciones-LG25"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/obleas-de-cookie-cream-5-raciones-LG25",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LA68",
@@ -2946,7 +3523,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/palmeras-3-raciones-LA68"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/palmeras-3-raciones-LA68",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LS13",
@@ -2974,7 +3556,15 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-blanco-7-raciones-LS13"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-blanco-7-raciones-LS13",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"frutos de cáscara",
+"sulfitos",
+"altramuces"
+]
 },
 {
 "ref": "LS19",
@@ -3001,7 +3591,16 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-de-molde-8-raciones-LS19"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-de-molde-8-raciones-LS19",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"soja",
+"frutos de cáscara",
+"mostaza",
+"altramuces"
+]
 },
 {
 "ref": "LS12",
@@ -3029,7 +3628,13 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-rustico-8-raciones-LS12"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/pan-rustico-8-raciones-LS12",
+"trazas": [
+"leche",
+"lactosa",
+"huevo",
+"altramuces"
+]
 },
 {
 "ref": "LG27",
@@ -3059,7 +3664,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/plumcake-de-vainilla-y-limon-3-raciones-LG27"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/plumcake-de-vainilla-y-limon-3-raciones-LG27",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"altramuces"
+]
 },
 {
 "ref": "DB24",
@@ -3091,7 +3701,16 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-chocolate-5-raciones-DB24"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-chocolate-5-raciones-DB24",
+"trazas": [
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DB28",
@@ -3118,7 +3737,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-lino-5-raciones-DB28"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-de-lino-5-raciones-DB28",
+"trazas": [
+"soja"
+]
 },
 {
 "ref": "DB20",
@@ -3146,7 +3768,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-naturales-5-raciones-DB20"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/tostadas-naturales-5-raciones-DB20",
+"trazas": [
+"mostaza"
+]
 },
 {
 "ref": "DM44",
@@ -3177,7 +3802,16 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/exquisiteces-de-chocolate-con-virutas-de-turron-5-raciones-DM44"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/exquisiteces-de-chocolate-con-virutas-de-turron-5-raciones-DM44",
+"trazas": [
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA12",
@@ -3202,7 +3836,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/gominolas-de-fresa-1-racion-LA12"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/gominolas-de-fresa-1-racion-LA12",
+"trazas": []
 },
 {
 "ref": "DM52",
@@ -3230,7 +3865,19 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-avellana-y-praline-5-raciones-DM52"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-avellana-y-praline-5-raciones-DM52",
+"trazas": [
+"gluten",
+"huevo",
+"soja",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "DSM42",
@@ -3260,7 +3907,18 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-chocolate-crujiente-16-raciones-DSM42"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/natillas-de-chocolate-crujiente-16-raciones-DSM42",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA74",
@@ -3292,7 +3950,10 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/aritos-de-chocolate-3-raciones-LA74"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/aritos-de-chocolate-3-raciones-LA74",
+"trazas": [
+"cacahuete"
+]
 },
 {
 "ref": "LA78",
@@ -3321,7 +3982,18 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-blanco-LA78"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-blanco-LA78",
+"trazas": [
+"gluten",
+"huevo",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos"
+]
 },
 {
 "ref": "LA77",
@@ -3350,7 +4022,18 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-con-leche-5-raciones-LA77"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/bolitas-de-chocolate-con-leche-5-raciones-LA77",
+"trazas": [
+"gluten",
+"huevo",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos"
+]
 },
 {
 "ref": "LA56",
@@ -3379,7 +4062,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-queso-y-cebolla-5-raciones-LA56"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-queso-y-cebolla-5-raciones-LA56",
+"trazas": [
+"huevo",
+"mostaza",
+"apio"
+]
 },
 {
 "ref": "LA58",
@@ -3407,7 +4095,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-pimienta-5-raciones-LA58"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-pimienta-5-raciones-LA58",
+"trazas": [
+"huevo",
+"mostaza",
+"apio"
+]
 },
 {
 "ref": "LA57",
@@ -3435,7 +4128,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-vinagre-5-raciones-LA57"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/chips-sabor-sal-y-vinagre-5-raciones-LA57",
+"trazas": [
+"huevo",
+"mostaza",
+"apio"
+]
 },
 {
 "ref": "LA28",
@@ -3460,7 +4158,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-al-punto-de-sal-1-racion-LA28"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-al-punto-de-sal-1-racion-LA28",
+"trazas": []
 },
 {
 "ref": "LA71",
@@ -3485,7 +4184,8 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-sabor-barbacoa-1-racion-LA71"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/cortezas-sabor-barbacoa-1-racion-LA71",
+"trazas": []
 },
 {
 "ref": "DL74",
@@ -3514,7 +4214,19 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/reganadas-al-romero-5-raciones-DL74"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/reganadas-al-romero-5-raciones-DL74",
+"trazas": [
+"leche",
+"lactosa",
+"frutos de cáscara",
+"pescado",
+"mostaza",
+"apio",
+"sulfitos",
+"cacahuete",
+"moluscos",
+"altramuces"
+]
 },
 {
 "ref": "LA72",
@@ -3539,7 +4251,8 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-lomo-de-pavo-1-racion-LA72"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-lomo-de-pavo-1-racion-LA72",
+"trazas": []
 },
 {
 "ref": "LA55",
@@ -3567,7 +4280,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-queso-chedar-5-raciones-LA55"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/snack-de-queso-chedar-5-raciones-LA55",
+"trazas": []
 },
 {
 "ref": "LA65",
@@ -3598,7 +4312,10 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chocolate-5-raciones-LA65"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-verde/sticks-de-chocolate-5-raciones-LA65",
+"trazas": [
+"cacahuete"
+]
 },
 {
 "ref": "LB20",
@@ -3628,7 +4345,14 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/barritas-sabor-naranja-con-chocolate-5-raciones-LB20"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/barritas-sabor-naranja-con-chocolate-5-raciones-LB20",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"mostaza",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "LA29",
@@ -3655,7 +4379,8 @@
 ],
 "fasesFuente": "gama",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/hamburguesa-de-pollo-5-raciones-LA29"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/hamburguesa-de-pollo-5-raciones-LA29",
+"trazas": []
 },
 {
 "ref": "LA13",
@@ -3682,7 +4407,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-pollo-barbacoa-5-raciones-LA13"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-pollo-barbacoa-5-raciones-LA13",
+"trazas": [
+"gluten",
+"mostaza",
+"apio"
+]
 },
 {
 "ref": "LA14",
@@ -3709,7 +4439,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-bacon-5-raciones-LA14"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-amarilla/nachos-sabor-bacon-5-raciones-LA14",
+"trazas": [
+"gluten",
+"mostaza",
+"apio"
+]
 },
 {
 "ref": "LB02",
@@ -3739,7 +4474,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-de-chocolate-5-raciones-LB02"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-de-chocolate-5-raciones-LB02",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "30LB03",
@@ -3769,7 +4509,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-30-raciones-30LB03"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-30-raciones-30LB03",
+"trazas": [
+"huevo",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "LB03",
@@ -3799,7 +4544,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-5-raciones-LB03"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/barrita-crisp-yogur-frutos-rojos-5-raciones-LB03",
+"trazas": [
+"huevo",
+"sulfitos",
+"cacahuete"
+]
 },
 {
 "ref": "30LB02",
@@ -3829,7 +4579,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": false,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-barritas-de-chocolate-30-raciones-30LB02"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-barritas-de-chocolate-30-raciones-30LB02",
+"trazas": [
+"huevo",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LG29",
@@ -3857,7 +4612,10 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/obleas-sabor-fresa-5-raciones-LG29"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/obleas-sabor-fresa-5-raciones-LG29",
+"trazas": [
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG09",
@@ -3885,7 +4643,12 @@
 ],
 "fasesFuente": "gama",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-chocolate-chips-5-raciones-LG09"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-chocolate-chips-5-raciones-LG09",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "DB45",
@@ -3915,7 +4678,8 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-con-pepitas-de-chocolate-5-raciones-DB45"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-con-pepitas-de-chocolate-5-raciones-DB45",
+"trazas": []
 },
 {
 "ref": "LG02",
@@ -3942,7 +4706,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-chocolate-5-raciones-LG02"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-chocolate-5-raciones-LG02",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LG03",
@@ -3969,7 +4738,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-frutos-rojos-5-raciones-LG03"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-frutos-rojos-5-raciones-LG03",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LG05",
@@ -3996,7 +4770,12 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-manzana-y-canela-5-raciones-LG05"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-manzana-y-canela-5-raciones-LG05",
+"trazas": [
+"soja",
+"frutos de cáscara",
+"cacahuete"
+]
 },
 {
 "ref": "LG01",
@@ -4023,7 +4802,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-naranja-5-raciones-LG01"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/galletas-de-naranja-5-raciones-LG01",
+"trazas": [
+"soja",
+"frutos de cáscara"
+]
 },
 {
 "ref": "30LG12",
@@ -4053,7 +4836,11 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-obleas-de-yogur-30-raciones-30LG12"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/caja-de-30-obleas-de-yogur-30-raciones-30LG12",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 },
 {
 "ref": "LG12",
@@ -4083,6 +4870,10 @@
 ],
 "fasesFuente": "catalogo",
 "listo": true,
-"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/oblea-yogur-essential-5-raciones-LG12"
+"url": "https://www.essentialdiet.es/productos-dieta-proteinas/gama-roja/oblea-yogur-essential-5-raciones-LG12",
+"trazas": [
+"huevo",
+"frutos de cáscara"
+]
 }
 ]

@@ -20,6 +20,8 @@ export interface Producto {
   grasas: number | null;
   fibra: number | null;
   alergenos: string[];
+  /** Posibles trazas declaradas por el fabricante. */
+  trazas: string[];
   fases: ("1" | "2" | "3" | "M")[];
   fasesFuente: "catalogo" | "gama";
   listo: boolean;
