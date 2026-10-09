@@ -8,6 +8,7 @@ export function ReplyForm({ patientId, escalationId, compact = false }: { patien
     <form action={action} className="space-y-2">
       <input type="hidden" name="patient_id" value={patientId} />
       {escalationId && <input type="hidden" name="escalation_id" value={escalationId} />}
+      {escalationId && <input type="hidden" name="desde" value="bandeja" />}
       <label className="sr-only" htmlFor={`r-${escalationId ?? patientId}`}>Respuesta</label>
       <textarea
         id={`r-${escalationId ?? patientId}`}

@@ -1,5 +1,6 @@
 "use server";
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { z } from "zod";
 import { createSupabaseServer, getSessionInfo } from "@/lib/supabase/server";
 import { createSupabaseAdmin } from "@/lib/supabase/admin";
@@ -37,6 +38,8 @@ export async function responderPaciente(_prev: RespuestaState, fd: FormData): Pr
     if (error) console.error("escalado", error.message);
   }
   revalidatePath("/clinica", "layout");
+  // Desde la bandeja, el escalado deja de estar pendiente: volvemos con una confirmación visible.
+  if (v.data.escalation_id && fd.get("desde") === "bandeja") redirect(`/clinica/mensajes?respondido=${canal}`);
   return { ok: canal === "whatsapp" ? "Enviado por WhatsApp." : "Enviado al chat del paciente." };
 }
 

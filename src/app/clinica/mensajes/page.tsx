@@ -18,6 +18,11 @@ export default async function MensajesPage({ searchParams }: PageProps<"/clinica
       <PageHeader title="Mensajes escalados">
         Lo que el asistente no responde por sí mismo: todo lo que tiene que ver con la salud del paciente, peticiones y preguntas que no sabe contestar. El texto es literal.
       </PageHeader>
+      {sp.respondido && (
+        <p role="status" className="rounded-xl border border-brand bg-brand-soft px-4 py-3 text-sm text-brand">
+          Respuesta enviada {sp.respondido === "whatsapp" ? "por WhatsApp" : "al chat del paciente"}. El mensaje pasa a «Todos» como respondido.
+        </p>
+      )}
       <div className="flex gap-2">
         {[
           ["abierta", "Pendientes"],
