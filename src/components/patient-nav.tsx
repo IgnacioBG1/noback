@@ -8,6 +8,7 @@ const ITEMS = [
   { href: "/paciente", label: "Inicio", icon: "home" },
   { href: "/paciente/plan", label: "Plan", icon: "plan" },
   { href: "/paciente/progreso", label: "Progreso", icon: "chart" },
+  { href: "/paciente/asistente", label: "Asistente", icon: "chat" },
   { href: "/paciente/analiticas", label: "Analíticas", icon: "lab" },
 ];
 
@@ -21,7 +22,7 @@ export function PatientBottomNav() {
   const active = useActive();
   return (
     <nav aria-label="Principal" className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
-      <div className="mx-auto grid max-w-lg grid-cols-4">
+      <div className="mx-auto grid max-w-lg grid-cols-5">
         {ITEMS.map((i) => (
           <Link
             key={i.href}

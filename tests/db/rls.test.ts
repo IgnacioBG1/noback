@@ -147,7 +147,7 @@ describe("Admin", () => {
 });
 
 describe("Privilegios de tabla (fuera de RLS)", () => {
-  const tables = ["profiles", "care_team", "enrollments", "consents", "access_log", "rights_requests", "intake_forms", "payments", "encounters", "measurements", "care_plans"];
+  const tables = ["profiles", "care_team", "enrollments", "consents", "access_log", "rights_requests", "intake_forms", "payments", "encounters", "measurements", "care_plans", "patient_channels", "messages", "escalations", "checkins"];
 
   it("ningún usuario autenticado puede vaciar una tabla (TRUNCATE no pasa por RLS)", async () => {
     for (const t of tables) {
@@ -180,6 +180,9 @@ describe("Privilegios de tabla (fuera de RLS)", () => {
       encounters: "INSERT,SELECT",
       measurements: "INSERT,SELECT",
       care_plans: "INSERT,SELECT",
+      messages: "INSERT,SELECT",
+      escalations: "SELECT",
+      checkins: "SELECT",
     });
   });
 });

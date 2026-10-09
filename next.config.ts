@@ -8,7 +8,7 @@ const csp = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
+  `img-src 'self' data: blob: ${supabase}`.trim(),
   "font-src 'self' data:",
   `connect-src 'self' ${supabase} ${supabaseWs}`.trim(),
   "frame-src 'none'", // se abrirá a Whereby en el bloque 3
@@ -31,6 +31,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: { serverActions: { bodySizeLimit: "10mb" } }, // fotos de comidas del chat
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

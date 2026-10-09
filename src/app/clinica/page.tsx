@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Card, CardTitle, EmptyState, Icon, PageHeader, StatCard } from "@/components/ui";
 import { PacientesTabla, PendientesLista } from "@/components/clinic-tables";
 import { diasDesde, getPacientes, getPendientes, getStaff } from "@/lib/clinica";
+import { getEscalados, REASON_LABEL } from "@/lib/mensajes";
+import { fmtFecha, nombreCompleto } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Hoy" };
 
@@ -12,7 +14,7 @@ function saludo(d = new Date()) {
 }
 
 export default async function HoyPage() {
-  const [pendientes, pacientes, staff] = await Promise.all([getPendientes(), getPacientes(), getStaff()]);
+  const [pendientes, pacientes, staff, escalados] = await Promise.all([getPendientes(), getPacientes(), getStaff(), getEscalados()]);
   const cuenta = (f: string | null) => pacientes.filter((p) => p.phase === f).length;
   const sinPagar = pacientes.filter((p) => !p.phase).length;
   const fecha = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/Madrid" }).format(new Date());
@@ -26,7 +28,7 @@ export default async function HoyPage() {
         <StatCard label="Valoraciones pendientes" value={pendientes.length} tone={pendientes.length ? "warn" : "default"} hint={enEspera ? `${enEspera} esperan más de 3 días` : "Pagadas, sin consulta"} />
         <StatCard label="En valoración" value={cuenta("valoracion")} hint={sinPagar ? `+${sinPagar} registrados sin pagar` : "Inscritos, antes del plan"} />
         <StatCard label="En fase activa" value={cuenta("activa")} tone="brand" hint="Con plan asignado" />
-        <StatCard label="Mantenimiento" value={cuenta("mantenimiento")} hint="Tras la fase activa" />
+        <StatCard label="Mensajes escalados" value={escalados.length} tone={escalados.length ? "warn" : "default"} hint={`${cuenta("mantenimiento")} en mantenimiento`} />
       </section>
 
       <div className="grid gap-4 lg:grid-cols-5">
@@ -52,10 +54,27 @@ export default async function HoyPage() {
             Las videoconsultas se programarán desde la ficha de cada paciente.
           </EmptyState>
           <div className="mt-4 rounded-xl border border-line p-4">
-            <p className="flex items-center gap-2 text-sm font-medium">
-              <Icon name="message" size={16} className="text-ink-soft" /> Mensajes escalados por el asistente
+            <p className="flex items-center justify-between gap-2 text-sm font-medium">
+              <span className="flex items-center gap-2">
+                <Icon name="message" size={16} className="text-ink-soft" /> Mensajes escalados
+              </span>
+              <Link href="/clinica/mensajes" className="text-xs text-brand hover:underline">{escalados.length ? `Ver ${escalados.length}` : "Ver"}</Link>
             </p>
-            <p className="mt-1 text-xs text-ink-soft">Cuando el asistente de WhatsApp derive una consulta al equipo, aparecerá aquí.</p>
+            {escalados.length ? (
+              <ul className="mt-2 space-y-2">
+                {escalados.slice(0, 3).map((e) => (
+                  <li key={e.id} className="rounded-lg bg-warn-soft px-3 py-2 text-sm">
+                    <span className="flex justify-between gap-2 text-xs">
+                      <span className="font-semibold text-warn-ink">{nombreCompleto(e)} · {REASON_LABEL[e.reason]}</span>
+                      <span className="text-ink-soft">{fmtFecha(e.created_at, { hour: "2-digit", minute: "2-digit" })}</span>
+                    </span>
+                    <span className="line-clamp-2">«{e.body ?? "Foto"}»</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-1 text-xs text-ink-soft">Nada pendiente. Cuando el asistente pase algo al equipo, aparecerá aquí.</p>
+            )}
           </div>
         </Card>
       </div>

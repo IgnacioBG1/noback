@@ -215,6 +215,13 @@ const paths: Record<string, React.ReactNode> = {
     </>
   ),
   alert: <path d="M12 4l9 16H3zM12 10v4M12 17v.5" />,
+  camera: (
+    <>
+      <path d="M4 8h3l2-3h6l2 3h3v11H4z" />
+      <circle cx="12" cy="13" r="3.5" />
+    </>
+  ),
+  chat: <path d="M4 5h16v11H9l-5 4z" />,
 };
 
 export function Icon({ name, size = 20, className = "" }: { name: keyof typeof paths | string; size?: number; className?: string }) {

@@ -6,6 +6,8 @@ import { KIND_LABEL, MODALITY_LABEL, normalizaMedicion, type Historia } from "@/
 import { TREATMENT_CONSENT_FOR_ROUTE } from "@/content/consentimientos";
 import { fase as faseDe, faseNombre, SUPLEMENTOS } from "@/content/essential";
 import { CambiarFaseForm } from "./fase-form";
+import { ReplyForm } from "@/app/clinica/mensajes/reply-form";
+import { createSupabaseAdmin } from "@/lib/supabase/admin";
 import { Avatar, EstadoBadge } from "@/components/clinic-tables";
 import { createSupabaseServer } from "@/lib/supabase/server";
 import { ROUTE_LABEL } from "@/lib/clinica";
@@ -44,6 +46,17 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
     supabase.rpc("get_clinical_record", { p_patient: id }),
     supabase.from("consents").select("kind, granted, text_version, created_at").eq("user_id", id).in("kind", ["tratamiento_glp1", "dieta_proteinada"]).order("created_at", { ascending: false }),
   ]);
+  const [{ data: conv }, { data: checkins }] = await Promise.all([
+    supabase.rpc("get_conversation", { p_patient: id, p_limit: 40 }),
+    supabase.from("checkins").select("kind, value, day").eq("patient_id", id).order("day"),
+  ]);
+  const mensajes = (conv ?? []) as { id: string; sender: string; body: string | null; media_path: string | null; meta: Record<string, unknown>; created_at: string; channel: string }[];
+  const rutas = mensajes.filter((m) => m.media_path).map((m) => m.media_path!);
+  // URLs firmadas tras la lectura auditada (get_conversation ya comprobó el permiso).
+  const firmadas = rutas.length ? (await createSupabaseAdmin().storage.from("comidas").createSignedUrls(rutas, 600)).data ?? [] : [];
+  const fotos = new Map(firmadas.filter((f) => f.signedUrl).map((f) => [f.path, f.signedUrl as string]));
+  const hace14 = new Date();
+  const dias14 = Array.from({ length: 14 }, (_, i) => new Date(hace14.getTime() - (13 - i) * 86_400_000).toISOString().slice(0, 10));
   const p = card?.[0];
   if (error || !p) notFound();
   const h = (rec ?? { encounters: [], measurements: [], plans: [] }) as Historia;
@@ -117,6 +130,8 @@ export default async function FichaPaciente({ params, searchParams }: PageProps<
       <div className="grid gap-4 lg:grid-cols-3">
         <div className="space-y-4 lg:col-span-2">
           <Mediciones medidas={medidas} />
+          <Adherencia dias={dias14} checkins={(checkins ?? []) as { kind: string; value: string; day: string }[]} />
+          <Conversacion mensajes={mensajes} fotos={fotos} patientId={id} />
           <Consultas h={h} patientId={id} />
           {!intake ? (
             <Card>
@@ -335,6 +350,76 @@ function Consultas({ h, patientId }: { h: Historia; patientId: string }) {
           </li>
         ))}
       </ol>
+    </Card>
+  );
+}
+
+const DIAS = 14;
+function Adherencia({ checkins, dias }: { checkins: { kind: string; value: string; day: string }[]; dias: string[] }) {
+  const color: Record<string, string> = { si: "bg-ok", parcial: "bg-[#F2B705]", no: "bg-warn", bien: "bg-ok", regular: "bg-[#F2B705]", mal: "bg-warn" };
+  const fila = (kind: string, label: string) => (
+    <div className="flex items-center gap-3">
+      <span className="w-24 shrink-0 text-xs text-ink-soft">{label}</span>
+      <div className="grid flex-1 grid-cols-14 gap-1" style={{ gridTemplateColumns: `repeat(${DIAS}, minmax(0, 1fr))` }}>
+        {dias.map((d) => {
+          const c = checkins.find((x) => x.kind === kind && x.day === d);
+          return <span key={d} title={`${d}: ${c?.value ?? "sin respuesta"}`} className={`h-5 rounded ${c ? color[c.value] : "bg-bg"}`} />;
+        })}
+      </div>
+    </div>
+  );
+  const plan = checkins.filter((c) => c.kind === "plan");
+  return (
+    <Card>
+      <CardTitle aside={`últimos ${DIAS} días · respuestas de un toque`}>Adherencia</CardTitle>
+      {checkins.length === 0 ? (
+        <p className="text-sm text-ink-soft">Aún no ha respondido a las preguntas del asistente.</p>
+      ) : (
+        <div className="space-y-2">
+          {fila("plan", "Plan")}
+          {fila("entreno", "Entreno")}
+          {fila("animo", "Ánimo")}
+          <p className="pt-1 text-xs text-ink-soft">
+            Plan seguido entero {plan.filter((c) => c.value === "si").length} de {plan.length} días respondidos. Verde: sí · amarillo: a medias o regular · naranja: no o mal · gris: sin respuesta.
+          </p>
+        </div>
+      )}
+    </Card>
+  );
+}
+
+function Conversacion({ mensajes, fotos, patientId }: { mensajes: { id: string; sender: string; body: string | null; media_path: string | null; meta: Record<string, unknown>; created_at: string; channel: string }[]; fotos: Map<string | null, string>; patientId: string }) {
+  const quien: Record<string, string> = { patient: "Paciente", agent: "Asistente", staff: "Equipo", system: "Recordatorio" };
+  return (
+    <Card>
+      <span id="conversacion" />
+      <CardTitle aside={mensajes.length ? `${mensajes.length} últimos mensajes` : undefined}>Conversación con el asistente</CardTitle>
+      {mensajes.length === 0 ? (
+        <p className="text-sm text-ink-soft">El paciente todavía no ha hablado con el asistente.</p>
+      ) : (
+        <ol className="max-h-[28rem] space-y-2 overflow-y-auto pr-1">
+          {mensajes.map((m) => {
+            const est = (m.meta as { estimacion?: { proteina_aprox_g: number | null; encaja: string } }).estimacion;
+            return (
+              <li key={m.id} className={`rounded-lg px-3 py-2 text-sm ${m.sender === "patient" ? "bg-bg" : m.sender === "staff" ? "bg-brand-soft" : "border border-line"}`}>
+                <p className="mb-0.5 text-[11px] text-ink-soft">
+                  {quien[m.sender]} · {fmtFecha(m.created_at, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" })}
+                  {m.channel === "whatsapp" ? " · WhatsApp" : ""}
+                </p>
+                {m.media_path && fotos.get(m.media_path) && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={fotos.get(m.media_path)} alt="Foto de comida enviada por el paciente" className="mb-1 max-h-48 rounded-md" />
+                )}
+                {m.body && <p className="whitespace-pre-line">{m.body}</p>}
+                {est && <p className="mt-1 text-xs text-ink-soft">Estimación automática: {est.proteina_aprox_g ?? "?"} g de proteína · encaja con la fase: {est.encaja}</p>}
+              </li>
+            );
+          })}
+        </ol>
+      )}
+      <div className="mt-4 border-t border-line pt-4">
+        <ReplyForm patientId={patientId} />
+      </div>
     </Card>
   );
 }

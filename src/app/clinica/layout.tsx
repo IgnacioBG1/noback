@@ -4,6 +4,7 @@ import { ClinicNav } from "@/components/clinic-nav";
 import { getSessionInfo } from "@/lib/supabase/server";
 import { decideAccess } from "@/lib/access";
 import { getPacientes, getPendientes, getStaff, ROLE_LABEL } from "@/lib/clinica";
+import { getEscalados } from "@/lib/mensajes";
 
 export const dynamic = "force-dynamic";
 
@@ -12,12 +13,12 @@ export default async function ClinicaLayout({ children }: LayoutProps<"/clinica"
   const d = decideAccess("clinica", s, "/clinica");
   if (!d.allow) redirect(d.redirectTo);
 
-  const [pendientes, pacientes, staff] = await Promise.all([getPendientes(), getPacientes(), getStaff()]);
+  const [pendientes, pacientes, staff, escalados] = await Promise.all([getPendientes(), getPacientes(), getStaff(), getEscalados()]);
   const items = [
     { href: "/clinica", label: "Hoy", icon: "home" },
     { href: "/clinica/pacientes", label: "Pacientes", icon: "users", count: pacientes.length },
     { href: "/clinica/valoraciones", label: "Valoraciones", icon: "clipboard", count: pendientes.length, alert: true },
-    { href: "/clinica/mensajes", label: "Mensajes escalados", icon: "message", soon: true },
+    { href: "/clinica/mensajes", label: "Mensajes escalados", icon: "message", count: escalados.length, alert: true },
     { href: "/clinica/agenda", label: "Agenda", icon: "calendar", soon: true },
     { href: "/clinica/equipo", label: "Equipo", icon: "team", soon: staff.role !== "admin" },
   ];
